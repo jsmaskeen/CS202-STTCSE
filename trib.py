@@ -1,3 +1,4 @@
+"""Recursive implementation of nth tribonacci number"""
 # Author: Jaskirat Singh Maskeen
 store = {}
 
@@ -12,7 +13,7 @@ def tribonacci(n: int) -> int:
     store[n] = tribonacci(n - 1) \
         + tribonacci(n - 2) \
         + tribonacci(n - 3)
-        
+
     return store[n]
 
 print(tribonacci(12))

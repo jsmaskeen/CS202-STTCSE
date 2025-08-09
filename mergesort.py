@@ -17,10 +17,10 @@ def merge(left, right):
     j = 0
     if len(left) > len(right):
         left, right = right, left
-        
+
     if len(left) > len(right):
         left, right = right, left
-        
+
     while i < len(left) and j < len(right):
         if left[i] < right[j]:
             merge_result.append(left[i])
