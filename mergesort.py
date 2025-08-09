@@ -17,6 +17,9 @@ def merge(left, Right):
     j = 0
     if len(left) > len(Right):
         left, Right = Right, left
+        
+    if len(left) > len(Right):
+        left, Right = Right, left
 
     while i < len(left) and j < len(Right):
         if left[i] < Right[j]:
@@ -37,6 +40,7 @@ def merge(left, Right):
         j += 1
 
     return mergeResult
+    print(mergeResult)
 
 
 def unused_function():  
