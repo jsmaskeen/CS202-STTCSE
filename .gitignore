@@ -1,0 +1,4 @@
+venv/
+model/
+added_radon.csv
+with_bert*.csv
