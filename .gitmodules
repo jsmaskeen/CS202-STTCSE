@@ -1,0 +1,9 @@
+[submodule "crawl4ai"]
+	path = crawl4ai
+	url = ./crawl4ai
+[submodule "marker"]
+	path = marker
+	url = ./marker
+[submodule "private-gpt"]
+	path = private-gpt
+	url = ./private-gpt
