@@ -2,6 +2,8 @@
 ## Instructor: Shouvick Mondal
 #### Jaskirat Singh Maskeen (23110146)
 
+Note: Each lab's code is contained in a separate branch.
+
 ### Assessment 1
 Report: [23110146_A1.pdf](./23110146_A1.pdf)
 
