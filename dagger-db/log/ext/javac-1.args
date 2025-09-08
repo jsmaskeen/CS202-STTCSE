@@ -1,0 +1,72 @@
+-Xprefer:source
+-source
+1.8
+-target
+1.8
+-d
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\buildOut\classes\java\main
+-h
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\buildOut\generated\sources\headers\java\main
+-g
+-sourcepath
+
+-proc:none
+-s
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\buildOut\generated\sources\annotationProcessor\java\main
+-XDuseUnsharedTable=true
+-classpath
+C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\jakarta.inject\jakarta.inject-api\2.0.1\4c28afe1991a941d7702fe1362c365f0a8641d1e\jakarta.inject-api-2.0.1.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\org.jspecify\jspecify\1.0.0\7425a601c1c7ec76645a78d22b8c6a627edee507\jspecify-1.0.0.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\buildOut\classes\kotlin\main
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\assisted\Assisted.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\assisted\AssistedFactory.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\assisted\AssistedInject.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\assisted\package-info.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\Binds.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\BindsInstance.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\BindsOptionalOf.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\Component.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\AbstractMapFactory.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\Beta.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\ComponentDefinitionType.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\DaggerCollections.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\DaggerGenerated.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\DelegateFactory.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\DoubleCheck.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\Factory.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\GwtIncompatible.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\IdentifierNameString.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\InjectedFieldSignature.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\InstanceFactory.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\KeepFieldType.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\LazyClassKeyMap.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\MapBuilder.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\MapFactory.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\MapProviderFactory.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\MembersInjectors.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\package-info.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\Preconditions.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\Provider.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\ProviderOfLazy.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\Providers.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\QualifierMetadata.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\ScopeMetadata.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\SetBuilder.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\SetFactory.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\internal\SingleCheck.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\Lazy.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\MapKey.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\MembersInjector.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\Module.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\multibindings\ClassKey.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\multibindings\ElementsIntoSet.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\multibindings\IntKey.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\multibindings\IntoMap.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\multibindings\IntoSet.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\multibindings\LazyClassKey.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\multibindings\LongKey.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\multibindings\Multibinds.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\multibindings\package-info.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\multibindings\StringKey.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\package-info.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\Provides.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\Reusable.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\main\java\dagger\Subcomponent.java

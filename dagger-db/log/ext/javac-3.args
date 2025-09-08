@@ -1,0 +1,58 @@
+-Xprefer:source
+-source
+1.8
+-target
+1.8
+-d
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\buildOut\classes\java\main
+-h
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\buildOut\generated\sources\headers\java\main
+-g
+-sourcepath
+
+-proc:none
+-s
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\buildOut\generated\sources\annotationProcessor\java\main
+-XDuseUnsharedTable=true
+-classpath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\buildOut\libs\dagger-LOCAL-SNAPSHOT.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-compat-qual\2.5.3\45f92d2e0676d05ae9297269b8268f93a875d4a\checker-compat-qual-2.5.3.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\33.0.0-jre\161ba27964a62f241533807a46b8711b13c1d94b\guava-33.0.0-jre.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\jakarta.inject\jakarta.inject-api\2.0.1\4c28afe1991a941d7702fe1362c365f0a8641d1e\jakarta.inject-api-2.0.1.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\org.jspecify\jspecify\1.0.0\7425a601c1c7ec76645a78d22b8c6a627edee507\jspecify-1.0.0.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.2\c4a06a64e650562f30b7bf9aaec1bfed43aca12b\failureaccess-1.0.2.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.41.0\8be6df7f1e9bccb19f8f351b3651f0bac2f5e0c\checker-qual-3.41.0.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.23.0\43a27853b6c7d54893e0b1997c2c778c347179eb\error_prone_annotations-2.23.0.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\2.8\c85270e307e7b822f1086b93689124b89768e273\j2objc-annotations-2.8.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\buildOut\classes\kotlin\main
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\CancellationPolicy.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\AbstractMapProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\AbstractProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\AbstractProducesMethodProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\AnnotationUsages.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\CancellableProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\CancellationListener.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\DelegateProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\DependencyMethodProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\LazyMapOfProducedProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\LazyMapOfProducerProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\LazyMapProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\MapOfProducedProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\MapOfProducerProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\MapProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\Producers.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\ProductionExecutorModule.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\ProductionImplementation.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\SetOfProducedProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\internal\SetProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\monitoring\internal\Monitors.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\monitoring\package-info.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\monitoring\ProducerMonitor.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\monitoring\ProducerTimingRecorder.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\monitoring\ProducerToken.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\monitoring\ProductionComponentMonitor.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\monitoring\ProductionComponentTimingRecorder.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\monitoring\TimingProducerMonitor.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\monitoring\TimingProductionComponentMonitor.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\monitoring\TimingRecorders.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\package-info.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\Produced.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\Producer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\ProducerModule.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\Producers.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\Produces.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\Production.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\ProductionComponent.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\ProductionScope.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-producers\main\java\dagger\producers\ProductionSubcomponent.java

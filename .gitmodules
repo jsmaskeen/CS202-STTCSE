@@ -1,0 +1,9 @@
+[submodule "dagger"]
+	path = dagger
+	url = https://github.com/google/dagger
+[submodule "guice"]
+	path = guice
+	url = https://github.com/google/guice
+[submodule "sentinel"]
+	path = sentinel
+	url = https://github.com/alibaba/sentinel

@@ -1,0 +1,16 @@
+-d
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-servlet\target\classes
+-classpath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-servlet\target\classes;C:\Users\GSRAJA\.m2\repository\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-core\target\sentinel-core-1.8.8.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-transport\sentinel-transport-simple-http\target\sentinel-transport-simple-http-1.8.8.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-transport\sentinel-transport-common\target\sentinel-transport-common-1.8.8.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-extension\sentinel-datasource-extension\target\sentinel-datasource-extension-1.8.8.jar;C:\Users\GSRAJA\.m2\repository\com\alibaba\fastjson\1.2.83_noneautotype\fastjson-1.2.83_noneautotype.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-adapter\sentinel-web-servlet\target\sentinel-web-servlet-1.8.8.jar;
+-sourcepath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-servlet\src\main\java;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-servlet\target\generated-sources\annotations;
+-s
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-servlet\target\generated-sources\annotations
+-g
+--release
+17
+-encoding
+UTF-8
+-XDuseUnsharedTable=true
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-servlet\src\main\java\com\alibaba\csp\sentinel\demo\servlet\config\SentinelConfig.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-servlet\src\main\java\com\alibaba\csp\sentinel\demo\servlet\controller\DefaultServlet.java

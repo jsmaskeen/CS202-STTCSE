@@ -1,0 +1,16 @@
+-d
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-log-logback\target\classes
+-classpath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-log-logback\target\classes;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-transport\sentinel-transport-common\target\sentinel-transport-common-1.8.8.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-extension\sentinel-datasource-extension\target\sentinel-datasource-extension-1.8.8.jar;C:\Users\GSRAJA\.m2\repository\com\alibaba\fastjson\1.2.83_noneautotype\fastjson-1.2.83_noneautotype.jar;C:\Users\GSRAJA\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\GSRAJA\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\GSRAJA\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-core\target\sentinel-core-1.8.8.jar;
+-sourcepath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-log-logback\src\main\java;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-log-logback\target\generated-sources\annotations;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-log-logback\target\generated-sources\annotations;
+-s
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-log-logback\target\generated-sources\annotations
+-g
+--release
+8
+-encoding
+UTF-8
+-XDuseUnsharedTable=true
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-log-logback\src\main\java\com\alibaba\csp\sentinel\demo\log\logback\CommandCenterLogLoggerImpl.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-log-logback\src\main\java\com\alibaba\csp\sentinel\demo\log\logback\RecordLogLoggerImpl.java

@@ -1,0 +1,53 @@
+-Xprefer:source
+-source
+1.8
+-target
+1.8
+-d
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\buildOut\classes\java\main
+-h
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\buildOut\generated\sources\headers\java\main
+-g
+-sourcepath
+
+-processorpath
+C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.auto.value\auto-value\1.9\fd4ec236e20ae0895c30e83260f611bcbc185086\auto-value-1.9.jar
+-s
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\buildOut\generated\sources\annotationProcessor\java\main
+-XDuseUnsharedTable=true
+-classpath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-compiler\main\java\dagger\internal\codegen\xprocessing\xprocessing-internal.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-runtime\buildOut\libs\dagger-LOCAL-SNAPSHOT.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.auto\auto-common\1.2.1\f6da26895f759010f5f170c8044e84c1b17ef83e\auto-common-1.2.1.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\33.0.0-jre\161ba27964a62f241533807a46b8711b13c1d94b\guava-33.0.0-jre.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.auto.value\auto-value-annotations\1.9\25a0fcef915f663679fcdb447541c5d86a9be4ba\auto-value-annotations-1.9.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.devtools.ksp\symbol-processing-api\2.0.21-1.0.28\be0d4d8db16fcfcfe993750d10e390a0472614d4\symbol-processing-api-2.0.21-1.0.28.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.2\c4a06a64e650562f30b7bf9aaec1bfed43aca12b\failureaccess-1.0.2.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.squareup\javapoet\1.13.0\d6562d385049f35eb50403fa86bb11cce76b866a\javapoet-1.13.0.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\jakarta.inject\jakarta.inject-api\2.0.1\4c28afe1991a941d7702fe1362c365f0a8641d1e\jakarta.inject-api-2.0.1.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\org.jspecify\jspecify\1.0.0\7425a601c1c7ec76645a78d22b8c6a627edee507\jspecify-1.0.0.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\2.0.20\7388d355f7cceb002cd387ccb7ab3850e4e0a07f\kotlin-stdlib-2.0.20.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.41.0\8be6df7f1e9bccb19f8f351b3651f0bac2f5e0c\checker-qual-3.41.0.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.23.0\43a27853b6c7d54893e0b1997c2c778c347179eb\error_prone_annotations-2.23.0.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\2.8\c85270e307e7b822f1086b93689124b89768e273\j2objc-annotations-2.8.jar;C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\buildOut\classes\kotlin\main
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\internal\codegen\extension\DaggerCollectors.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\internal\codegen\extension\DaggerGraphs.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\internal\codegen\extension\DaggerStreams.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\internal\codegen\extension\Optionals.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\model\Binding.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\model\BindingGraph.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\model\BindingKind.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\model\ComponentPath.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\model\DependencyRequest.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\model\Key.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\model\package-info.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\model\RequestKind.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\model\Scope.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\BindingGraphPlugin.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\DiagnosticReporter.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\Binding.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\BindingGraph.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\BindingGraphPlugin.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\BindingKind.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\ComponentPath.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\DaggerAnnotation.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\DaggerElement.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\DaggerExecutableElement.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\DaggerProcessingEnv.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\DaggerType.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\DaggerTypeElement.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\DependencyRequest.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\DiagnosticReporter.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\Key.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\MoreAnnotationMirrors.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\package-info.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\RequestKind.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\model\Scope.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-spi\main\java\dagger\spi\package-info.java

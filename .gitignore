@@ -1,0 +1,4 @@
+other/
+venv/
+*__pycache__*
+sentinel-db/log/execute-queries-20250908.031222.824.log

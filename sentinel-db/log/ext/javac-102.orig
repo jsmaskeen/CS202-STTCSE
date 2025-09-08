@@ -1,0 +1,17 @@
+-d
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-rocketmq\target\classes
+-classpath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-rocketmq\target\classes;C:\Users\GSRAJA\.m2\repository\org\apache\rocketmq\rocketmq-client\4.2.0\rocketmq-client-4.2.0.jar;C:\Users\GSRAJA\.m2\repository\org\apache\rocketmq\rocketmq-common\4.2.0\rocketmq-common-4.2.0.jar;C:\Users\GSRAJA\.m2\repository\org\apache\rocketmq\rocketmq-remoting\4.2.0\rocketmq-remoting-4.2.0.jar;C:\Users\GSRAJA\.m2\repository\com\alibaba\fastjson\1.2.83_noneautotype\fastjson-1.2.83_noneautotype.jar;C:\Users\GSRAJA\.m2\repository\io\netty\netty-all\4.0.42.Final\netty-all-4.0.42.Final.jar;C:\Users\GSRAJA\.m2\repository\org\slf4j\slf4j-api\1.7.7\slf4j-api-1.7.7.jar;C:\Users\GSRAJA\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-core\target\sentinel-core-1.8.8.jar;
+-sourcepath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-rocketmq\src\main\java;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-rocketmq\target\generated-sources\annotations;
+-s
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-rocketmq\target\generated-sources\annotations
+-g
+--release
+17
+-encoding
+UTF-8
+-XDuseUnsharedTable=true
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-rocketmq\src\main\java\com\alibaba\csp\sentinel\demo\rocketmq\Constants.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-rocketmq\src\main\java\com\alibaba\csp\sentinel\demo\rocketmq\SyncProducer.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-rocketmq\src\main\java\com\alibaba\csp\sentinel\demo\rocketmq\PullConsumerDemo.java

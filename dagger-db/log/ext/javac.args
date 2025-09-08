@@ -1,0 +1,21 @@
+-Xprefer:source
+-source
+1.8
+-target
+1.8
+-d
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-grpc-server-annotations\buildOut\classes\java\main
+-h
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-grpc-server-annotations\buildOut\generated\sources\headers\java\main
+-g
+-sourcepath
+
+-proc:none
+-s
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-grpc-server-annotations\buildOut\generated\sources\annotationProcessor\java\main
+-XDuseUnsharedTable=true
+-classpath
+C:\Users\GSRAJA\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-grpc-server-annotations\buildOut\classes\kotlin\main
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-grpc-server-annotations\main\java\dagger\grpc\server\CallScoped.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-grpc-server-annotations\main\java\dagger\grpc\server\ForGrpcService.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\dagger-grpc-server-annotations\main\java\dagger\grpc\server\GrpcService.java

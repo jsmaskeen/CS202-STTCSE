@@ -1,0 +1,18 @@
+-Xprefer:source
+-d
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-slotchain-spi\target\classes
+-classpath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-slotchain-spi\target\classes;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-core\target\sentinel-core-1.8.8.jar;
+-sourcepath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-slotchain-spi\src\main\java;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-slotchain-spi\target\generated-sources\annotations;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-slotchain-spi\target\generated-sources\annotations;
+-s
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-slotchain-spi\target\generated-sources\annotations
+-g
+--release
+8
+-encoding
+UTF-8
+-XDuseUnsharedTable=true
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-slotchain-spi\src\main\java\com\alibaba\csp\sentinel\demo\slotchain\DemoSlotChainBuilder.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-slotchain-spi\src\main\java\com\alibaba\csp\sentinel\demo\slotchain\DemoFlowRuleApplication.java
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-demo\sentinel-demo-slotchain-spi\src\main\java\com\alibaba\csp\sentinel\demo\slotchain\DemoDegradeRuleApplication.java

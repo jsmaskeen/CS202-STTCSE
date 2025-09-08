@@ -1,0 +1,15 @@
+-d
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-extension\sentinel-datasource-eureka\target\classes
+-classpath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-extension\sentinel-datasource-eureka\target\classes;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-extension\sentinel-datasource-extension\target\sentinel-datasource-extension-1.8.8.jar;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-core\target\sentinel-core-1.8.8.jar;C:\Users\GSRAJA\.m2\repository\com\alibaba\fastjson\1.2.83_noneautotype\fastjson-1.2.83_noneautotype.jar;C:\Users\GSRAJA\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.4.2\jackson-databind-2.13.4.2.jar;C:\Users\GSRAJA\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.4\jackson-annotations-2.13.4.jar;C:\Users\GSRAJA\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.4\jackson-core-2.13.4.jar;
+-sourcepath
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-extension\sentinel-datasource-eureka\src\main\java;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-extension\sentinel-datasource-eureka\target\generated-sources\annotations;C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-extension\sentinel-datasource-eureka\target\generated-sources\annotations;
+-s
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-extension\sentinel-datasource-eureka\target\generated-sources\annotations
+-g
+--release
+8
+-encoding
+UTF-8
+-XDuseUnsharedTable=true
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel\sentinel-extension\sentinel-datasource-eureka\src\main\java\com\alibaba\csp\sentinel\datasource\eureka\EurekaDataSource.java
