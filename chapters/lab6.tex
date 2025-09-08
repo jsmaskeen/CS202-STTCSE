@@ -1,0 +1,212 @@
+
+\chapter[Evaluation of VAT using CWE-based Comparison]{Evaluation of Vulnerability Analysis Tools using CWE-based Comparison}
+\label{ch:lab6} % This how you label a chapter and the key (e.g., ch:into) will be used to refer this chapter ``Introduction'' later in the report. 
+% the key ``ch:into'' can be used with command \ref{ch:intor} to refere this Chapter.
+
+\begin{center}
+    \href{https://github.com/jsmaskeen/CS202-STTCSE/tree/lab6}{Github Repository for Lab 6}
+\end{center}
+
+\section{Introduction}
+Git is a version control system that helps us manage the versions of our projects either locally or on some Git provider such as GitLab or GitHub. The primary advantage of using GitHub or any such provider is that we can collaborate with other users and share our code online with other potential users. This sort of framework supports active development and constant feedback, as anyone can create an Issue or fork our repository and provide pull requests to improve or fix issues with our code.
+
+The main goal of this lab is to understand version control systems (VCS), set up and configure git, verify the installation, and run simple Git commands to push files. 
+
+
+\section{Setup and Tools}
+I have Git, Python, and VSCode installed. Since I have already used GitHub before, I have it preconfigured and installed, so I will skip the screenshots for installation details. I will use Git CLI on the command prompt and GitHub Web Interface to create repositories and run workflows. I will also use pylint to perform static type checking.
+\texttt{git {-}{-}version} gives \texttt{git version 2.45.2.windows.1} as the output.
+While logging into git using the CLI, we first have to sign in using username and password, and verify on GitHub Mobile, as I have 2FA enabled. 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.45\linewidth]{figures/1_1.png}
+    \caption{Configuring the git CLI}
+    \label{git_cli_condig}
+\end{figure}
+I also confirm if the current credentials are set (Fig.~\ref{git_cli_condig}). The \texttt{{-}{-}global} flag is used because I have two GitHub accounts on my laptop, and I want to verify the global configuration. These commands were looked through using \href{https://git-scm.com/docs/git-config}{https://git-scm.com/docs/git-config}. 
+My working directory is named \texttt{STT\_Lab\_1}. 
+
+\section{Methodology and Execution}
+I first initialized a repository in my working directory using \texttt{git init}. I have put in a sample file named \textbf{trib.py}, which calculates the $n^{th}$ Tribonacci number. I also added a \textbf{readme.md} file, which will get rendered on the link of this repository. I also plan to have a single repository on GitHub, with a new branch for each lab to avoid clutter. Hence, I will also rename the branch to \textbf{lab1},
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.85\linewidth]{figures/1_2.png}
+    \caption{Initializing a git repository}
+    \label{1_2}
+\end{figure}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.85\linewidth]{figures/1_3.png}
+    \caption{Committing to \textbf{lab1} branch.}
+    \label{1_3}
+\end{figure}
+
+I can check the status of the repository using \texttt{git status} (Fig.~\ref{1_2}), and add files one by one using git add filename, or all upstaged files (i.e., which have a delta), at once using \texttt{git add .}, I can commit these changes using the command \texttt{git commit -m "Added files"}, where "Added files" is a commit message (Fig.~\ref{1_3}).
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/1_4.png}
+    \caption{\texttt{git log} command}
+    \label{1_4}
+\end{figure}
+\texttt{git log} is also a useful command to check the history of the commits being made. 
+Now I create a GitHub repository, \textbf{CS202-STTCSE}, which will be the repository where I will upload all the labs, just on their respective branches. GitHub Link: \href{https://github.com/jsmaskeen/CS202-STTCSE/tree/lab1}{https://github.com/jsmaskeen/CS202-STTCSE/tree/lab1}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/1_5.png}
+    \caption{GitHub eepository creation}
+    \label{fig:placeholder}
+\end{figure}
+
+I then added the local repository to GitHub using the commands,\\
+\texttt{git remote add origin git@github.com:jsmaskeen/CS202-STTCSE.git},\\
+Followed by \texttt{git push -u origin lab1}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/1_6.png}
+    \caption{Pushing the code to remote repository on GitHub}
+    \label{fig:placeholder}
+\end{figure}
+
+So, in this way, my local repository is now on GitHub. Now, if I do any commits and push them locally, they will reflect on GitHub as well.
+For example, I add another file, say \textbf{mergesort.py}. I will stage and commit the file, but not push it. Then I will clone this repository elsewhere, and to demonstrate the pull command, I will push the \textbf{mergesort.py} file after I have cloned the repository.
+Please see the sequence of commands carefully ((Figures~\ref{1_7}, \ref{1_8}, \ref{1_9}, \ref{1_10}, and \ref{1_11})).
+
+\begin{figure}[!ht]
+    \centering
+    % First figure
+    \begin{minipage}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/1_7.png}
+        \caption{\textbf{Step 1:} Stage the \textbf{mergesort.py} and commit}
+        \label{1_7}
+    \end{minipage}%
+    \hfill
+    % Second figure
+    \begin{minipage}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/1_8.png}
+        \caption{\textbf{Step 2:} Clone the repository elsewhere}
+        \label{1_8}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    % First figure
+    \begin{minipage}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/1_9.png}
+        \caption{\textbf{Step 3:} Now I push to GitHub.}
+        \label{1_9}
+    \end{minipage}%
+    \hfill
+    % Second figure
+    \begin{minipage}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/1_10.png}
+        \caption{\textbf{Step 4:} Check with the cloned repository (\texttt{git fetch}, \texttt{git status})}
+        \label{1_10}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/1_11.png}
+    \caption{\textbf{Step 5:} Check the file structure before and after pulling. (git pull)}
+    \label{1_11}
+\end{figure}
+
+This demonstrated the \texttt{git pull} as well as \texttt{git clone} commands.
+Now I have to create a pylint workflow, so I have deliberately kept some issues in the \textbf{mergesory.py} file, such as unused imports, unused functions, and an unused while loop. I hope to see pylint detect all these issues.
+
+To create a pylint workflow, I configured the GitHub action corresponding to pylint.
+
+Once I clicked on configure, a \textbf{pylint.yml} file appeared in editing format under a new folder named workflows (Fig.~\ref{1_12}). Once I committed and pushed this file on the GitHub UI (This means I will have to do \texttt{git pull} on local (Fig.~\ref{1_13}), to stay up to date), the action ran and gave a few errors. 
+
+Whenever the action fails, we are greeted with a {\color{red}\ding{55}} (a red cross) (Fig.~\ref{1_14}), and whenever it passes, we are greeted with a  {\color{blue} \checkmark} (a blue tick).
+
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/1_12.png}
+        \caption{Pylint workflow}
+        \label{1_12}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/1_13.png}
+        \caption{Pulling on local to stay up to date}
+        \label{1_13}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/1_14.png}
+    \caption{Workflow is running}
+    \label{1_14}
+\end{figure}
+
+\section{Results and Analysis}
+Since I uploaded an erroneous file (which executes correctly, but has unused code, and should fail static checking) (Fig.~\ref{1_15}).
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/1_15.png}
+    \caption{\textbf{mergesort.py} file (with errors)}
+    \label{1_15}
+\end{figure}
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/1_16.png}
+        \caption{Failed Checks}
+        \label{1_16}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/1_17.png}
+        \caption{Issues found by workflow.}
+        \label{1_17}
+    \end{minipage}
+\end{figure}
+Looking carefully at the details, we see multiple issues (Fig.~\ref{1_16}, Fig.~\ref{1_17}). However, the workflow was not able to detect a few issues, for example:
+\FloatBarrier
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/1_18.png}
+    \caption{Corrected Code}
+    \label{1_18}
+\end{figure}
+
+In Fig.~\ref{1_18} we have the same \texttt{if loop} repeated (which swaps left and right), which serves no function. 
+So, it should be kept only once. [But static analysis cannot capture that].
+It was also not able to detect the unused function. 
+To fix the issues, I have edited the docstrings, multiple statements in a single line, and line too long issues.
+
+\noindent After pushing with these changes, we see that our tests have passed (Fig.~\ref{1_19}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/1_19.png}
+    \caption{All checks passed after fixing the \textbf{mergesort.py} file.}
+    \label{1_19}
+\end{figure}
+
+\section{Discussion and Conclusion}
+This was a really interesting and useful lab session. Using git/GitHub will help us manage our code and collaborate with others; specifically, GitHub actions can configure our workflows, be it static checking or deploying a website after some post-processing. Maybe we write a library that requires a compilation, and various languages comprise the code base, so we can have a GitHub action to compile in the order we like and merge the files, to finally create an executable, for different OS. I did not face any difficulty in this lab; however, while configuring git, I had two accounts. I configured it with SSH tokens, so to set origin for a repository in my main account, I do 
+\texttt{git remote add origin git@github.com:jsmaskeen/repo.git}, and for my other account, I do
+\texttt{git remote add origin git@github.com-unofficial:jsxxx/repo.git}.
+Another thing I learnt, if we have ssh enabled, we can check if we are authenticated to GitHub via the command
+\texttt{ssh -T git@github.com}. 
+Lastly, pylint was good, but it can only check issues statically. One mode of improvement can be to have two or more workflows, which also perform static checking, and they do not yield conflicting results, to find any issues missed by pylint (for example, the unused functions).
+
+
+\bibliographystyle{IEEEtran}   % or any style you prefer
+\nocite{*}    
+\bibliography{chapters/refs1}           % specific bib file for this chapter
