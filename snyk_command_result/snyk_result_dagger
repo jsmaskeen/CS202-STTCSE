@@ -1,0 +1,35 @@
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger>snyk code test --sarif-file-output=../snyk_results_dagger.sarif
+
+Testing C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger ...
+
+ ✗ [Low] Use of Hardcoded Credentials 
+   Path: java/dagger/example/atm/LoginCommand.java, line 45 
+   Info: Do not hardcode credentials in code.
+
+ ✗ [Medium] Command Injection 
+   Path: util/cleanup-github-caches.py, line 133 
+   Info: Unsanitized input from an environment variable flows into subprocess.run, where it is used as a shell command. This may result in a Command Injection vulnerability.
+
+ ✗ [Medium] Command Injection 
+   Path: util/cleanup-github-caches.py, line 134 
+   Info: Unsanitized input from an environment variable flows into subprocess.run, where it is used as a shell command. This may result in a Command Injection vulnerability.
+
+ ✗ [Medium] Command Injection 
+   Path: util/validate-jar-language-level.py, line 69 
+   Info: Unsanitized input from a command line argument flows into subprocess.run, where it is used as a shell command. This may result in a Command Injection vulnerability.
+
+ ✗ [Medium] Regular Expression Denial of Service (ReDoS) 
+   Path: util/validate-jar-entry-prefixes.py, line 18 
+   Info: Unsanitized user input from a command line argument flows into re.compile, where it is used to build a regular expression. This may result in a Regular expression Denial of Service attack (reDOS).
+
+
+✔ Test completed
+
+Organization:      jsmaskeen
+Test type:         Static code analysis
+Project path:      C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger
+
+Summary:
+
+  5 Code issues found
+  4 [Medium]   1 [Low]

@@ -1,0 +1,172 @@
+(venv) C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger>codeql database create ../dagger-db --language=java-kotlin --build-mode=autobuild
+Initializing database at C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger-db.
+Running build command: [C:\Users\GSRAJA\Downloads\codeql-win64\codeql\java\tools\autobuild.cmd]
+Running command in C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger: [C:\Users\GSRAJA\Downloads\codeql-win64\codeql\java\tools\autobuild.cmd]
+[2025-09-08 02:08:02] [build-stdout] [2025-09-08 02:08:02] Build directory is C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger\.
+[2025-09-08 02:08:02] [build-stdout] [2025-09-08 02:08:02] Found no Java toolchains in a toolchains file, inspecting environment variables...
+[2025-09-08 02:08:02] [build-stdout] [2025-09-08 02:08:02] Found no Java toolchains in a toolchains file, inspecting environment variables...
+[2025-09-08 02:08:03] [build-stdout] [2025-09-08 02:08:03] Identified 17.0.16 as the newest version of Java supported by the version of Gradle in use. The system default of 17.0.16 is compatible with this.
+[2025-09-08 02:08:03] [build-stdout] [2025-09-08 02:08:03] [autobuild] > gradlew.bat --no-daemon -S -Dorg.gradle.dependency.verification=off -Dorg.gradle.warning.mode=none --init-script "C:\\Users\\GSRAJA\\AppData\\Local\\Temp\\semmleTempDir7480654829277091881\\init.gradle" clean
+[2025-09-08 02:08:05] [build-stdout] [2025-09-08 02:08:05] [autobuild] To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.11.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+[2025-09-08 02:08:09] [build-stdout] [2025-09-08 02:08:09] [autobuild] Daemon will be stopped at the end of the build 
+[2025-09-08 02:08:11] [build-stdout] [2025-09-08 02:08:11] [autobuild] Calculating task graph as no cached configuration is available for tasks: clean
+[2025-09-08 02:08:25] [build-stdout] [2025-09-08 02:08:25] [autobuild] > Task :buildSrc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[2025-09-08 02:08:25] [build-stdout] [2025-09-08 02:08:25] [autobuild] > Task :buildSrc:compileKotlin UP-TO-DATE
+[2025-09-08 02:08:25] [build-stdout] [2025-09-08 02:08:25] [autobuild] > Task :buildSrc:compileJava NO-SOURCE
+[2025-09-08 02:08:25] [build-stdout] [2025-09-08 02:08:25] [autobuild] > Task :buildSrc:compileGroovy NO-SOURCE
+[2025-09-08 02:08:25] [build-stdout] [2025-09-08 02:08:25] [autobuild] > Task :buildSrc:pluginDescriptors UP-TO-DATE
+[2025-09-08 02:08:25] [build-stdout] [2025-09-08 02:08:25] [autobuild] > Task :buildSrc:processResources UP-TO-DATE
+[2025-09-08 02:08:25] [build-stdout] [2025-09-08 02:08:25] [autobuild] > Task :buildSrc:classes UP-TO-DATE
+[2025-09-08 02:08:25] [build-stdout] [2025-09-08 02:08:25] [autobuild] > Task :buildSrc:jar UP-TO-DATE
+[2025-09-08 02:08:30] [build-stdout] [2025-09-08 02:08:30] [autobuild] > Task :dagger-testing:clean
+[2025-09-08 02:08:30] [build-stdout] [2025-09-08 02:08:30] [autobuild] > Task :dagger-grpc-server-processor:clean
+[2025-09-08 02:08:30] [build-stdout] [2025-09-08 02:08:30] [autobuild] > Task :dagger-grpc-server-annotations:clean
+[2025-09-08 02:08:30] [build-stdout] [2025-09-08 02:08:30] [autobuild] > Task :dagger-grpc-server:clean
+[2025-09-08 02:08:30] [build-stdout] [2025-09-08 02:08:30] [autobuild] > Task :dagger:clean
+[2025-09-08 02:08:30] [build-stdout] [2025-09-08 02:08:30] [autobuild] > Task :dagger-lint:clean
+[2025-09-08 02:08:30] [build-stdout] [2025-09-08 02:08:30] [autobuild] > Task :dagger-producers:clean
+[2025-09-08 02:08:30] [build-stdout] [2025-09-08 02:08:30] [autobuild] > Task :dagger-spi:clean
+[2025-09-08 02:08:31] [build-stdout] [2025-09-08 02:08:31] [autobuild] > Task :dagger-compiler:clean
+[2025-09-08 02:08:31] [build-stdout] [2025-09-08 02:08:31] [autobuild] BUILD SUCCESSFUL in 26s
+[2025-09-08 02:08:31] [build-stdout] [2025-09-08 02:08:31] [autobuild] 13 actionable tasks: 9 executed, 4 up-to-date
+[2025-09-08 02:08:31] [build-stdout] [2025-09-08 02:08:31] [autobuild] Configuration cache entry stored.
+[2025-09-08 02:08:31] [build-stdout] [2025-09-08 02:08:31] [autobuild] > gradlew.bat --no-daemon -S -Dorg.gradle.dependency.verification=off -Dorg.gradle.warning.mode=none --init-script "C:\\Users\\GSRAJA\\AppData\\Local\\Temp\\semmleTempDir7480654829277091881\\init.gradle" testClasses
+[2025-09-08 02:08:33] [build-stdout] [2025-09-08 02:08:33] [autobuild] To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.11.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+[2025-09-08 02:08:37] [build-stdout] [2025-09-08 02:08:37] [autobuild] Daemon will be stopped at the end of the build 
+[2025-09-08 02:08:39] [build-stdout] [2025-09-08 02:08:39] [autobuild] Calculating task graph as no cached configuration is available for tasks: testClasses
+[2025-09-08 02:08:50] [build-stdout] [2025-09-08 02:08:50] [autobuild] > Task :buildSrc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[2025-09-08 02:08:51] [build-stdout] [2025-09-08 02:08:51] [autobuild] > Task :buildSrc:compileKotlin UP-TO-DATE
+[2025-09-08 02:08:51] [build-stdout] [2025-09-08 02:08:51] [autobuild] > Task :buildSrc:compileJava NO-SOURCE
+[2025-09-08 02:08:51] [build-stdout] [2025-09-08 02:08:51] [autobuild] > Task :buildSrc:compileGroovy NO-SOURCE
+[2025-09-08 02:08:51] [build-stdout] [2025-09-08 02:08:51] [autobuild] > Task :buildSrc:pluginDescriptors UP-TO-DATE
+[2025-09-08 02:08:51] [build-stdout] [2025-09-08 02:08:51] [autobuild] > Task :buildSrc:processResources UP-TO-DATE
+[2025-09-08 02:08:51] [build-stdout] [2025-09-08 02:08:51] [autobuild] > Task :buildSrc:classes UP-TO-DATE
+[2025-09-08 02:08:51] [build-stdout] [2025-09-08 02:08:51] [autobuild] > Task :buildSrc:jar UP-TO-DATE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-spi:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server-annotations:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-producers:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-compiler:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-testing:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-testing:writeVersionFile SKIPPED
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server-processor:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server-annotations:processTestResources NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger:processTestResources NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-compiler:processTestResources NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-lint:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server-processor:processTestResources NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server:processTestResources NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-testing:processResources NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-testing:processTestResources NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-producers:processTestResources NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-spi:processTestResources NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-lint:processTestResources NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server-annotations:compileKotlin NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger:compileKotlin NO-SOURCE
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server-annotations:writeVersionFile
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-spi:writeVersionFile
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server-processor:writeVersionFile
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-lint:writeVersionFile
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-producers:writeVersionFile
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-compiler:writeVersionFile
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server:writeVersionFile
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger:writeVersionFile
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-spi:processResources
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server-annotations:processResources
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-lint:processResources
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server:processResources
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-producers:processResources
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-compiler:processResources
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger-grpc-server-processor:processResources
+[2025-09-08 02:09:25] [build-stdout] [2025-09-08 02:09:25] [autobuild] > Task :dagger:processResources
+[2025-09-08 02:09:29] [build-stdout] [2025-09-08 02:09:29] [autobuild] > Task :dagger-lint:compileKotlin
+[2025-09-08 02:09:29] [build-stdout] [2025-09-08 02:09:29] [autobuild] > Task :dagger-lint:compileJava NO-SOURCE
+[2025-09-08 02:09:29] [build-stdout] [2025-09-08 02:09:29] [autobuild] > Task :dagger-lint:classes
+[2025-09-08 02:09:29] [build-stdout] [2025-09-08 02:09:29] [autobuild] > Task :dagger-lint:jar
+[2025-09-08 02:09:31] [build-stdout] [2025-09-08 02:09:31] [autobuild] > Task :dagger-lint:compileTestKotlin
+[2025-09-08 02:09:31] [build-stdout] [2025-09-08 02:09:31] [autobuild] > Task :dagger-lint:compileTestJava NO-SOURCE
+[2025-09-08 02:09:31] [build-stdout] [2025-09-08 02:09:31] [autobuild] > Task :dagger-lint:testClasses UP-TO-DATE
+[2025-09-08 02:09:35] [build-stdout] [2025-09-08 02:09:35] [autobuild] > Task :dagger:compileJava
+[2025-09-08 02:09:35] [build-stdout] [2025-09-08 02:09:35] [autobuild] > Task :dagger:classes
+[2025-09-08 02:09:35] [build-stdout] [2025-09-08 02:09:35] [autobuild] > Task :dagger:jar
+[2025-09-08 02:09:35] [build-stdout] [2025-09-08 02:09:35] [autobuild] > Task :dagger:compileTestKotlin NO-SOURCE
+[2025-09-08 02:09:35] [build-stdout] [2025-09-08 02:09:35] [autobuild] > Task :dagger-producers:compileKotlin NO-SOURCE
+[2025-09-08 02:09:36] [build-stdout] [2025-09-08 02:09:36] [autobuild] > Task :dagger-grpc-server-annotations:compileJava
+[2025-09-08 02:09:36] [build-stdout] [2025-09-08 02:09:36] [autobuild] > Task :dagger-grpc-server-annotations:classes
+[2025-09-08 02:09:36] [build-stdout] [2025-09-08 02:09:36] [autobuild] > Task :dagger-grpc-server-annotations:jar
+[2025-09-08 02:09:36] [build-stdout] [2025-09-08 02:09:36] [autobuild] > Task :dagger-grpc-server:compileKotlin NO-SOURCE
+[2025-09-08 02:09:36] [build-stdout] [2025-09-08 02:09:36] [autobuild] > Task :dagger-grpc-server-annotations:compileTestKotlin NO-SOURCE
+[2025-09-08 02:09:36] [build-stdout] [2025-09-08 02:09:36] [autobuild] > Task :dagger-grpc-server-annotations:compileTestJava NO-SOURCE
+[2025-09-08 02:09:36] [build-stdout] [2025-09-08 02:09:36] [autobuild] > Task :dagger-grpc-server-annotations:testClasses UP-TO-DATE
+[2025-09-08 02:09:37] [build-stdout] [2025-09-08 02:09:37] [autobuild] > Task :dagger-spi:compileKotlin
+[2025-09-08 02:09:37] [build-stdout] [2025-09-08 02:09:37] [autobuild] > Task :dagger:compileTestJava
+[2025-09-08 02:09:37] [build-stdout] [2025-09-08 02:09:37] [autobuild] Note: Some input files use or override a deprecated API.
+[2025-09-08 02:09:37] [build-stdout] [2025-09-08 02:09:37] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2025-09-08 02:09:44] [build-stdout] [2025-09-08 02:09:44] [autobuild] > Task :dagger:testClasses
+[2025-09-08 02:09:48] [build-stdout] [2025-09-08 02:09:48] [autobuild] > Task :dagger-producers:compileJava
+[2025-09-08 02:09:48] [build-stdout] [2025-09-08 02:09:48] [autobuild] > Task :dagger-producers:classes
+[2025-09-08 02:09:48] [build-stdout] [2025-09-08 02:09:48] [autobuild] > Task :dagger-producers:jar
+[2025-09-08 02:09:48] [build-stdout] [2025-09-08 02:09:48] [autobuild] > Task :dagger-producers:compileTestKotlin NO-SOURCE
+[2025-09-08 02:09:48] [build-stdout] [2025-09-08 02:09:48] [autobuild] > Task :dagger-producers:compileTestJava NO-SOURCE
+[2025-09-08 02:09:48] [build-stdout] [2025-09-08 02:09:48] [autobuild] > Task :dagger-producers:testClasses UP-TO-DATE
+[2025-09-08 02:09:51] [build-stdout] [2025-09-08 02:09:51] [autobuild] > Task :dagger-spi:compileJava
+[2025-09-08 02:09:51] [build-stdout] [2025-09-08 02:09:51] [autobuild] > Task :dagger-spi:classes
+[2025-09-08 02:09:51] [build-stdout] [2025-09-08 02:09:51] [autobuild] > Task :dagger-spi:shadowJar FROM-CACHE
+[2025-09-08 02:09:51] [build-stdout] [2025-09-08 02:09:51] [autobuild] > Task :dagger-spi:jar
+[2025-09-08 02:09:51] [build-stdout] [2025-09-08 02:09:51] [autobuild] > Task :dagger-spi:compileTestKotlin NO-SOURCE
+[2025-09-08 02:09:51] [build-stdout] [2025-09-08 02:09:51] [autobuild] > Task :dagger-grpc-server-processor:compileKotlin NO-SOURCE
+[2025-09-08 02:09:51] [build-stdout] [2025-09-08 02:09:51] [autobuild] > Task :dagger-spi:compileTestJava NO-SOURCE
+[2025-09-08 02:09:51] [build-stdout] [2025-09-08 02:09:51] [autobuild] > Task :dagger-spi:testClasses UP-TO-DATE
+[2025-09-08 02:09:53] [build-stdout] [2025-09-08 02:09:53] [autobuild] > Task :dagger-grpc-server-processor:compileJava
+[2025-09-08 02:09:53] [build-stdout] [2025-09-08 02:09:53] [autobuild] Note: Some input files use or override a deprecated API.
+[2025-09-08 02:09:53] [build-stdout] [2025-09-08 02:09:53] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2025-09-08 02:09:55] [build-stdout] [2025-09-08 02:09:55] [autobuild] > Task :dagger-compiler:compileKotlin
+[2025-09-08 02:09:58] [build-stdout] [2025-09-08 02:09:58] [autobuild] > Task :dagger-grpc-server-processor:classes
+[2025-09-08 02:09:58] [build-stdout] [2025-09-08 02:09:58] [autobuild] > Task :dagger-grpc-server-processor:jar
+[2025-09-08 02:09:58] [build-stdout] [2025-09-08 02:09:58] [autobuild] > Task :dagger-grpc-server-processor:compileTestKotlin NO-SOURCE
+[2025-09-08 02:09:58] [build-stdout] [2025-09-08 02:09:58] [autobuild] > Task :dagger-grpc-server-processor:compileTestJava NO-SOURCE
+[2025-09-08 02:09:58] [build-stdout] [2025-09-08 02:09:58] [autobuild] > Task :dagger-grpc-server-processor:testClasses UP-TO-DATE
+[2025-09-08 02:10:10] [build-stdout] [2025-09-08 02:10:10] [autobuild] Note: Some input files use or override a deprecated API.
+[2025-09-08 02:10:10] [build-stdout] [2025-09-08 02:10:10] [autobuild] > Task :dagger-compiler:compileJava
+[2025-09-08 02:10:10] [build-stdout] [2025-09-08 02:10:10] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2025-09-08 02:11:08] [build-stdout] [2025-09-08 02:11:08] [autobuild] > Task :dagger-compiler:classes
+[2025-09-08 02:11:08] [build-stdout] [2025-09-08 02:11:08] [autobuild] > Task :dagger-compiler:shadowJar FROM-CACHE
+[2025-09-08 02:11:08] [build-stdout] [2025-09-08 02:11:08] [autobuild] > Task :dagger-testing:compileKotlin NO-SOURCE
+[2025-09-08 02:11:09] [build-stdout] [2025-09-08 02:11:09] [autobuild] > Task :dagger-compiler:jar
+[2025-09-08 02:11:12] [build-stdout] [2025-09-08 02:11:12] [autobuild] > Task :dagger-testing:compileJava
+[2025-09-08 02:11:12] [build-stdout] [2025-09-08 02:11:12] [autobuild] > Task :dagger-testing:classes
+[2025-09-08 02:11:12] [build-stdout] [2025-09-08 02:11:12] [autobuild] > Task :dagger-testing:jar
+[2025-09-08 02:11:12] [build-stdout] [2025-09-08 02:11:12] [autobuild] > Task :dagger-compiler:compileTestKotlin NO-SOURCE
+[2025-09-08 02:11:12] [build-stdout] [2025-09-08 02:11:12] [autobuild] > Task :dagger-testing:compileTestKotlin NO-SOURCE
+[2025-09-08 02:11:12] [build-stdout] [2025-09-08 02:11:12] [autobuild] > Task :dagger-compiler:compileTestJava NO-SOURCE
+[2025-09-08 02:11:12] [build-stdout] [2025-09-08 02:11:12] [autobuild] > Task :dagger-testing:compileTestJava NO-SOURCE
+[2025-09-08 02:11:12] [build-stdout] [2025-09-08 02:11:12] [autobuild] > Task :dagger-compiler:testClasses UP-TO-DATE
+[2025-09-08 02:11:12] [build-stdout] [2025-09-08 02:11:12] [autobuild] > Task :dagger-testing:testClasses UP-TO-DATE
+[2025-09-08 02:11:17] [build-stdout] [2025-09-08 02:11:17] [autobuild] > Task :dagger-grpc-server:compileJava
+[2025-09-08 02:11:17] [build-stdout] [2025-09-08 02:11:17] [autobuild] > Task :dagger-grpc-server:classes
+[2025-09-08 02:11:17] [build-stdout] [2025-09-08 02:11:17] [autobuild] > Task :dagger-grpc-server:jar
+[2025-09-08 02:11:17] [build-stdout] [2025-09-08 02:11:17] [autobuild] > Task :dagger-grpc-server:compileTestKotlin NO-SOURCE
+[2025-09-08 02:11:17] [build-stdout] [2025-09-08 02:11:17] [autobuild] > Task :dagger-grpc-server:compileTestJava NO-SOURCE
+[2025-09-08 02:11:17] [build-stdout] [2025-09-08 02:11:17] [autobuild] > Task :dagger-grpc-server:testClasses UP-TO-DATE
+[2025-09-08 02:11:17] [build-stdout] [2025-09-08 02:11:17] [autobuild] [Incubating] Problems report is available at: file:///C:/Users/GSRAJA/Desktop/IIT%20GN/sem5/sttcse/Labs/STT_Lab_5/dagger/buildOut/reports/problems/problems-report.html
+[2025-09-08 02:11:17] [build-stdout] [2025-09-08 02:11:17] [autobuild] BUILD SUCCESSFUL in 2m 44s
+[2025-09-08 02:11:17] [build-stdout] [2025-09-08 02:11:17] [autobuild] 44 actionable tasks: 38 executed, 2 from cache, 4 up-to-date
+[2025-09-08 02:11:17] [build-stdout] [2025-09-08 02:11:17] [autobuild] Configuration cache entry stored.
+Finalizing database at C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger-db.
+Running pre-finalize script C:\Users\GSRAJA\Downloads\codeql-win64\codeql\java\tools\pre-finalize.cmd in C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger.
+Running command in C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger: [C:\Users\GSRAJA\Downloads\codeql-win64\codeql\java\tools\pre-finalize.cmd]
+[2025-09-08 02:11:21] [build-stderr] Scanning for files in C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger...
+[2025-09-08 02:11:21] [build-stderr] C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger-db: Indexing files in in C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger...
+[2025-09-08 02:11:21] [build-stderr] Running command in C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger: [C:\Users\GSRAJA\Downloads\codeql-win64\codeql\xml\tools\index-files.cmd, C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger-db\working\files-to-index4519697389561323343.list]
+[2025-09-08 02:11:25] [build-stderr] Scanning for files in C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger...
+[2025-09-08 02:11:25] [build-stderr] C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger-db: Indexing files in in C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger...
+[2025-09-08 02:11:25] [build-stderr] Running command in C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger: [C:\Users\GSRAJA\Downloads\codeql-win64\codeql\properties\tools\index-files.cmd, C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger-db\working\files-to-index2089817342217853009.list]
+Pre-finalize script C:\Users\GSRAJA\Downloads\codeql-win64\codeql\java\tools\pre-finalize.cmd completed in 9425 ms.
+Running TRAP import for CodeQL database at C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger-db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 5.38 MiB; string pool: 9.53 MiB).
+TRAP import complete (56.4s).
+Finished zipping source archive (1.30 MiB).
+Successfully created database at C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger-db.

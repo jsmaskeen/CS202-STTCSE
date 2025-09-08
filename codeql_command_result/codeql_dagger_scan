@@ -1,0 +1,734 @@
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\dagger>codeql database analyze ../dagger-db codeql/java-queries:codeql-suites/java-security-and-quality.qls --format=sarif-latest --output=codeql_dagger-results.sarif
+Running queries.
+[1/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Arithmetic\InformationLoss.qlx.
+[2/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-020\OverlyLargeRange.qlx.
+[3/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-022\TaintedPath.qlx.
+[4/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-022\ZipSlip.qlx.
+[5/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-023\PartialPathTraversalFromRemote.qlx.
+[6/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-074\JndiInjection.qlx.
+[7/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-074\XsltInjection.qlx.
+[8/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-078\ExecTainted.qlx.
+[9/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-079\XSS.qlx.
+[10/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-089\SqlTainted.qlx.
+[11/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-090\LdapInjection.qlx.
+[12/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-094\GroovyInjection.qlx.
+[13/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-094\InsecureBeanValidation.qlx.
+[14/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-094\JexlInjection.qlx.
+[15/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-094\MvelInjection.qlx.
+[16/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-094\SpelInjection.qlx.
+[17/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-094\TemplateInjection.qlx.
+[18/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-1104\MavenPomDependsOnBintray.qlx.
+[19/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-113\NettyResponseSplitting.qlx.
+[20/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-113\ResponseSplitting.qlx.
+[21/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-1204\StaticInitializationVector.qlx.
+[22/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-134\ExternallyControlledFormatString.qlx.
+[23/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-200\SpringBootActuators.qlx.
+[24/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-200\SpringBootActuatorsConfig\SpringBootActuatorsConfig.qlx.
+[25/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-209\SensitiveDataExposureThroughErrorMessage.qlx.
+[26/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-209\StackTraceExposure.qlx.
+[27/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-266\IntentUriPermissionManipulation.qlx.
+[28/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-287\AndroidInsecureLocalAuthentication.qlx.
+[29/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-295\ImproperWebViewCertificateValidation.qlx.
+[30/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-295\InsecureTrustManager.qlx.
+[31/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-297\UnsafeHostnameVerification.qlx.
+[32/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-312\AllowBackupAttributeEnabled.qlx.
+[33/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-312\CleartextStorageCookie.qlx.
+[34/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-326\InsufficientKeySize.qlx.
+[35/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-327\BrokenCryptoAlgorithm.qlx.
+[36/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-330\InsecureRandomness.qlx.
+[37/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-335\PredictableSeed.qlx.
+[38/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-338\JHipsterGeneratedPRNG.qlx.
+[39/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-347\MissingJWTSignatureCheck.qlx.
+[40/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-352\SpringCSRFProtection.qlx.
+[41/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-441\UnsafeContentUriResolution.qlx.
+[42/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-470\FragmentInjection.qlx.
+[43/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-470\FragmentInjectionInPreferenceActivity.qlx.
+[44/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-489\DebuggableAttributeEnabled.qlx.
+[45/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-489\WebviewDebuggingEnabled.qlx.
+[46/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-502\UnsafeDeserialization.qlx.
+[47/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-522\InsecureLdapAuth.qlx.
+[48/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-552\UrlForward.qlx.
+[49/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-601\UrlRedirect.qlx.
+[50/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-611\XXE.qlx.
+[51/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-614\InsecureCookie.qlx.
+[52/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-643\XPathInjection.qlx.
+[53/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-681\NumericCastTainted.qlx.
+[54/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-730\PolynomialReDoS.qlx.
+[55/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-730\ReDoS.qlx.
+[56/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-730\RegexInjection.qlx.
+[57/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-732\ReadingFromWorldWritableFile.qlx.
+[58/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-780\RsaWithoutOaep.qlx.
+[59/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-807\TaintedPermissionsCheck.qlx.
+[60/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-829\InsecureDependencyResolution.qlx.
+[61/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-917\OgnlInjection.qlx.
+[62/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-918\RequestForgery.qlx.
+[63/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-925\ImproperIntentVerification.qlx.
+[64/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-926\ImplicitlyExportedAndroidComponent.qlx.
+[65/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-927\ImplicitPendingIntents.qlx.
+[66/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-940\AndroidIntentRedirection.qlx.
+[67/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\UnreleasedLock.qlx.
+[68/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-023\PartialPathTraversal.qlx.
+[69/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-078\ExecRelative.qlx.
+[70/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-078\ExecTaintedEnvironment.qlx.
+[71/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-078\ExecUnescaped.qlx.
+[72/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-079\AndroidWebViewAddJavascriptInterface.qlx.
+[73/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-079\AndroidWebViewSettingsEnabledJavaScript.qlx.
+[74/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-089\SqlConcatenated.qlx.
+[75/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-094\ArbitraryApkInstallation.qlx.
+[76/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-117\LogInjection.qlx.
+[77/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-129\ImproperValidationOfArrayConstruction.qlx.
+[78/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-129\ImproperValidationOfArrayIndex.qlx.
+[79/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-190\ArithmeticTainted.qlx.
+[80/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-190\ArithmeticUncontrolled.qlx.
+[81/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-190\ComparisonWithWiderType.qlx.
+[82/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-200\AndroidSensitiveNotifications.qlx.
+[83/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-200\AndroidSensitiveTextField.qlx.
+[84/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-200\AndroidWebViewSettingsAllowsContentAccess.qlx.
+[85/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-200\AndroidWebViewSettingsFileAccess.qlx.
+[86/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-200\TempDirLocalInformationDisclosure.qlx.
+[87/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-273\UnsafeCertTrust.qlx.
+[88/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-287\AndroidInsecureKeys.qlx.
+[89/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-295\AndroidMissingCertificatePinning.qlx.
+[90/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-297\InsecureJavaMail.qlx.
+[91/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-312\CleartextStorageAndroidDatabase.qlx.
+[92/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-312\CleartextStorageAndroidFilesystem.qlx.
+[93/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-312\CleartextStorageProperties.qlx.
+[94/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-312\CleartextStorageSharedPrefs.qlx.
+[95/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-327\MaybeBrokenCryptoAlgorithm.qlx.
+[96/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-352\CsrfUnprotectedRequestType.qlx.
+[97/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-367\TOCTOURace.qlx.
+[98/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-421\SocketAuthRace.qlx.
+[99/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-501\TrustBoundaryViolation.qlx.
+[100/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-522\InsecureBasicAuth.qlx.
+[101/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-524\SensitiveKeyboardCache.qlx.
+[102/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-532\SensitiveInfoLog.qlx.
+[103/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-676\PotentiallyDangerousFunction.qlx.
+[104/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-749\UnsafeAndroidAccess.qlx.
+[105/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-807\ConditionalBypass.qlx.
+[106/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-835\InfiniteLoop.qlx.
+[107/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-926\ContentProviderIncompletePermissions.qlx.
+[108/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-927\SensitiveCommunication.qlx.
+[109/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Security\CWE\CWE-927\SensitiveResultReceiver.qlx.
+[110/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Diagnostics\ExtractionErrors.qlx.
+[111/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Diagnostics\ExtractionWarnings.qlx.
+[112/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Diagnostics\SuccessfullyExtractedFiles.qlx.
+[113/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Telemetry\DatabaseQualityDiagnostics.qlx.
+[114/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Metrics\Summaries\LinesOfCode.qlx.
+[115/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Metrics\Summaries\LinesOfCodeJava.qlx.
+[116/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Metrics\Summaries\LinesOfCodeKotlin.qlx.
+[117/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Telemetry\ExternalLibraryUsage.qlx.
+[118/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Telemetry\ExtractorInformation.qlx.
+[119/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Telemetry\SupportedExternalApis.qlx.
+[120/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Telemetry\SupportedExternalSinks.qlx.
+[121/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Telemetry\SupportedExternalSources.qlx.
+[122/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Telemetry\SupportedExternalTaint.qlx.
+[123/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Telemetry\UnsupportedExternalAPIs.qlx.
+[124/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Advisory\Declarations\MissingOverrideAnnotation.qlx.
+[125/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Advisory\Deprecated Code\AvoidDeprecatedCallableAccess.qlx.
+[126/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Advisory\Documentation\ImpossibleJavadocThrows.qlx.
+[127/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Advisory\Documentation\SpuriousJavadocParam.qlx.
+[128/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Compatibility\JDK9\JdkInternalAccess.qlx.
+[129/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Compatibility\JDK9\UnderscoreIdentifier.qlx.
+[130/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\DeadCode\UselessParameter.qlx.
+[131/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Language Abuse\ChainedInstanceof.qlx.
+[132/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Language Abuse\IterableIterator.qlx.
+[133/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Language Abuse\OverridePackagePrivate.qlx.
+[134/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Language Abuse\TypeVarExtendsFinalType.qlx.
+[135/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Language Abuse\TypeVariableHidesType.qlx.
+[136/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Language Abuse\UselessNullCheck.qlx.
+[137/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Language Abuse\UselessTypeTest.qlx.
+[138/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Language Abuse\WrappedIterator.qlx.
+[139/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Arithmetic\BadAbsOfRandom.qlx.
+[140/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Arithmetic\ConstantExpAppearsNonConstant.qlx.
+[141/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Arithmetic\IntMultToLong.qlx.
+[142/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Arithmetic\LShiftLargerThanTypeWidth.qlx.
+[143/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Arithmetic\MultiplyRemainder.qlx.
+[144/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Arithmetic\RandomUsedOnce.qlx.
+[145/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Arithmetic\WhitespaceContradictsPrecedence.qlx.
+[146/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Cloning\MissingCallToSuperClone.qlx.
+[147/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Cloning\MissingMethodClone.qlx.
+[148/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Collections\ArrayIndexOutOfBounds.qlx.
+[149/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Collections\ContainsTypeMismatch.qlx.
+[150/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Collections\IteratorRemoveMayFail.qlx.
+[151/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Collections\ReadOnlyContainer.qlx.
+[152/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Collections\RemoveTypeMismatch.qlx.
+[153/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Collections\WriteOnlyContainer.qlx.
+[154/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\CompareIdenticalValues.qlx.
+[155/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\CovariantCompareTo.qlx.
+[156/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\CovariantEquals.qlx.
+[157/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\EqualsArray.qlx.
+[158/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\HashedButNoHash.qlx.
+[159/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\IncomparableEquals.qlx.
+[160/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\InconsistentCompareTo.qlx.
+[161/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\InconsistentEqualsHashCode.qlx.
+[162/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\MissingInstanceofInEquals.qlx.
+[163/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\RefEqBoxed.qlx.
+[164/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\StringComparison.qlx.
+[165/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\UselessComparisonTest.qlx.
+[166/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Comparison\WrongNanComparison.qlx.
+[167/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\CallsToConditionWait.qlx.
+[168/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\CallsToRunnableRun.qlx.
+[169/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\DateFormatThreadUnsafe.qlx.
+[170/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\DoubleCheckedLocking.qlx.
+[171/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\DoubleCheckedLockingWithInitRace.qlx.
+[172/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\FutileSynchOnField.qlx.
+[173/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\NonSynchronizedOverride.qlx.
+[174/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\NotifyNotNotifyAll.qlx.
+[175/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\SleepWithLock.qlx.
+[176/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\StartInConstructor.qlx.
+[177/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\SynchOnBoxedType.qlx.
+[178/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\SynchSetUnsynchGet.qlx.
+[179/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Concurrency\SynchWriteObject.qlx.
+[180/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Finalization\NullifiedSuperFinalize.qlx.
+[181/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Frameworks\JUnit\BadSuiteMethod.qlx.
+[182/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Frameworks\Swing\BadlyOverriddenAdapter.qlx.
+[183/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Inheritance\NoNonFinalInConstructor.qlx.
+[184/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\ContainerSizeCmpZero.qlx.
+[185/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\ContradictoryTypeChecks.qlx.
+[186/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\DangerousNonCircuitLogic.qlx.
+[187/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\EqualsTypo.qlx.
+[188/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\HashCodeTypo.qlx.
+[189/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\MissingFormatArg.qlx.
+[190/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\MissingSpaceTypo.qlx.
+[191/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\SelfAssignment.qlx.
+[192/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\StringBufferCharInit.qlx.
+[193/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\SuspiciousDateFormat.qlx.
+[194/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\ToStringTypo.qlx.
+[195/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Likely Typos\UnusedFormatArg.qlx.
+[196/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Nullness\NullAlways.qlx.
+[197/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Nullness\NullExprDeref.qlx.
+[198/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Nullness\NullMaybe.qlx.
+[199/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Reflection\AnnotationPresentCheck.qlx.
+[200/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Resource Leaks\CloseReader.qlx.
+[201/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Resource Leaks\CloseSql.qlx.
+[202/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Resource Leaks\CloseWriter.qlx.
+[203/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Serialization\IncorrectSerializableMethods.qlx.
+[204/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Serialization\IncorrectSerialVersionUID.qlx.
+[205/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Serialization\MissingVoidConstructorOnExternalizable.qlx.
+[206/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Serialization\MissingVoidConstructorsOnSerializable.qlx.
+[207/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Serialization\NonSerializableInnerClass.qlx.
+[208/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Serialization\ReadResolveObject.qlx.
+[209/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Statements\ContinueInFalseLoop.qlx.
+[210/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Statements\MissingEnumInSwitch.qlx.
+[211/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Statements\PartiallyMaskedCatch.qlx.
+[212/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Statements\UseBraces.qlx.
+[213/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Termination\ConstantLoopCondition.qlx.
+[214/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Likely Bugs\Termination\SpinOnField.qlx.
+[215/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Performance\InefficientEmptyStringTest.qlx.
+[216/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Performance\InefficientKeySetIterator.qlx.
+[217/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Performance\InefficientOutputStream.qlx.
+[218/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Performance\InefficientPrimConstructor.qlx.
+[219/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Performance\InnerClassCouldBeStatic.qlx.
+[220/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Performance\NewStringString.qlx.
+[221/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Boxed Types\BoxedVariable.qlx.
+[222/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Dead Code\CreatesEmptyZip.qlx.
+[223/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Dead Code\DeadRefTypes.qlx.
+[224/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Dead Code\InterfaceCannotBeImplemented.qlx.
+[225/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Dead Code\UnreadLocal.qlx.
+[226/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Dead Code\UnusedLabel.qlx.
+[227/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Declarations\NoConstantsOnly.qlx.
+[228/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Exception Handling\IgnoreExceptionalReturn.qlx.
+[229/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Exception Handling\NumberFormatException.qlx.
+[230/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Implementation Hiding\AbstractToConcreteCollection.qlx.
+[231/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Implementation Hiding\ExposeRepresentation.qlx.
+[232/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Implementation Hiding\GetClassGetResource.qlx.
+[233/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Naming Conventions\AmbiguousOuterSuper.qlx.
+[234/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Naming Conventions\ConfusingMethodNames.qlx.
+[235/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Naming Conventions\ConfusingOverloading.qlx.
+[236/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Naming Conventions\FieldMasksSuperField.qlx.
+[237/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Naming Conventions\LocalShadowsFieldConfusing.qlx.
+[238/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Naming Conventions\SameNameAsSuper.qlx.
+[239/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Undesirable Calls\CallsToRunFinalizersOnExit.qlx.
+[240/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Undesirable Calls\CallsToStringToString.qlx.
+[241/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Undesirable Calls\DefaultToString.qlx.
+[242/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Undesirable Calls\NextFromIterator.qlx.
+[243/243] Loaded C:\Users\GSRAJA\.codeql\packages\codeql\java-queries\1.7.0\Violations of Best Practice\Undesirable Calls\PrintLnArray.qlx.
+Starting evaluation of codeql\java-queries\Advisory\Declarations\MissingOverrideAnnotation.ql.
+Starting evaluation of codeql\java-queries\Advisory\Deprecated Code\AvoidDeprecatedCallableAccess.ql.
+[1/243 eval 4.9s] Evaluation done; writing results to codeql\java-queries\Advisory\Declarations\MissingOverrideAnnotation.bqrs.
+Starting evaluation of codeql\java-queries\Advisory\Documentation\ImpossibleJavadocThrows.ql.
+[2/243 eval 165ms] Evaluation done; writing results to codeql\java-queries\Advisory\Deprecated Code\AvoidDeprecatedCallableAccess.bqrs.
+Starting evaluation of codeql\java-queries\Advisory\Documentation\SpuriousJavadocParam.ql.
+[3/243 eval 215ms] Evaluation done; writing results to codeql\java-queries\Advisory\Documentation\ImpossibleJavadocThrows.bqrs.
+Starting evaluation of codeql\java-queries\Compatibility\JDK9\JdkInternalAccess.ql.
+[4/243 eval 43ms] Evaluation done; writing results to codeql\java-queries\Advisory\Documentation\SpuriousJavadocParam.bqrs.
+Starting evaluation of codeql\java-queries\Compatibility\JDK9\UnderscoreIdentifier.ql.
+[5/243 eval 233ms] Evaluation done; writing results to codeql\java-queries\Compatibility\JDK9\JdkInternalAccess.bqrs.
+Starting evaluation of codeql\java-queries\DeadCode\UselessParameter.ql.
+[6/243 eval 102ms] Evaluation done; writing results to codeql\java-queries\Compatibility\JDK9\UnderscoreIdentifier.bqrs.
+Starting evaluation of codeql\java-queries\Diagnostics\ExtractionErrors.ql.
+[7/243 eval 345ms] Evaluation done; writing results to codeql\java-queries\DeadCode\UselessParameter.bqrs.
+Starting evaluation of codeql\java-queries\Diagnostics\ExtractionWarnings.ql.
+[8/243 eval 70ms] Evaluation done; writing results to codeql\java-queries\Diagnostics\ExtractionErrors.bqrs.
+Starting evaluation of codeql\java-queries\Diagnostics\SuccessfullyExtractedFiles.ql.
+[9/243 eval 2ms] Evaluation done; writing results to codeql\java-queries\Diagnostics\ExtractionWarnings.bqrs.
+Starting evaluation of codeql\java-queries\Language Abuse\ChainedInstanceof.ql.
+[10/243 eval 100ms] Evaluation done; writing results to codeql\java-queries\Diagnostics\SuccessfullyExtractedFiles.bqrs.
+Starting evaluation of codeql\java-queries\Language Abuse\IterableIterator.ql.
+[11/243 eval 25ms] Evaluation done; writing results to codeql\java-queries\Language Abuse\ChainedInstanceof.bqrs.
+Starting evaluation of codeql\java-queries\Language Abuse\OverridePackagePrivate.ql.
+[12/243 eval 69ms] Evaluation done; writing results to codeql\java-queries\Language Abuse\IterableIterator.bqrs.
+Starting evaluation of codeql\java-queries\Language Abuse\TypeVarExtendsFinalType.ql.
+[13/243 eval 125ms] Evaluation done; writing results to codeql\java-queries\Language Abuse\OverridePackagePrivate.bqrs.
+Starting evaluation of codeql\java-queries\Language Abuse\TypeVariableHidesType.ql.
+[14/243 eval 31ms] Evaluation done; writing results to codeql\java-queries\Language Abuse\TypeVarExtendsFinalType.bqrs.
+Starting evaluation of codeql\java-queries\Language Abuse\UselessNullCheck.ql.
+[15/243 eval 396ms] Evaluation done; writing results to codeql\java-queries\Language Abuse\TypeVariableHidesType.bqrs.
+Starting evaluation of codeql\java-queries\Language Abuse\UselessTypeTest.ql.
+[16/243 eval 10.5s] Evaluation done; writing results to codeql\java-queries\Language Abuse\UselessNullCheck.bqrs.
+Starting evaluation of codeql\java-queries\Language Abuse\WrappedIterator.ql.
+[17/243 eval 6ms] Evaluation done; writing results to codeql\java-queries\Language Abuse\UselessTypeTest.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Arithmetic\BadAbsOfRandom.ql.
+[18/243 eval 7ms] Evaluation done; writing results to codeql\java-queries\Language Abuse\WrappedIterator.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Arithmetic\ConstantExpAppearsNonConstant.ql.
+[19/243 eval 73ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Arithmetic\BadAbsOfRandom.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Arithmetic\InformationLoss.ql.
+[20/243 eval 67ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Arithmetic\ConstantExpAppearsNonConstant.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Arithmetic\IntMultToLong.ql.
+[21/243 eval 38ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Arithmetic\InformationLoss.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Arithmetic\LShiftLargerThanTypeWidth.ql.
+[22/243 eval 118ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Arithmetic\IntMultToLong.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Arithmetic\MultiplyRemainder.ql.
+[23/243 eval 19ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Arithmetic\LShiftLargerThanTypeWidth.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Arithmetic\RandomUsedOnce.ql.
+[24/243 eval 4ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Arithmetic\MultiplyRemainder.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Arithmetic\WhitespaceContradictsPrecedence.ql.
+[25/243 eval 67ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Arithmetic\RandomUsedOnce.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Cloning\MissingCallToSuperClone.ql.
+[26/243 eval 44ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Arithmetic\WhitespaceContradictsPrecedence.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Cloning\MissingMethodClone.ql.
+[27/243 eval 61ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Cloning\MissingCallToSuperClone.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Collections\ArrayIndexOutOfBounds.ql.
+[28/243 eval 88ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Cloning\MissingMethodClone.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Collections\ContainsTypeMismatch.ql.
+[29/243 eval 30ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Collections\ArrayIndexOutOfBounds.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Collections\IteratorRemoveMayFail.ql.
+[30/243 eval 188ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Collections\ContainsTypeMismatch.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Collections\ReadOnlyContainer.ql.
+[31/243 eval 38ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Collections\IteratorRemoveMayFail.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Collections\RemoveTypeMismatch.ql.
+[32/243 eval 9.9s] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Collections\ReadOnlyContainer.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Collections\WriteOnlyContainer.ql.
+[33/243 eval 26ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Collections\RemoveTypeMismatch.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\CompareIdenticalValues.ql.
+[34/243 eval 290ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Collections\WriteOnlyContainer.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\CovariantCompareTo.ql.
+[35/243 eval 61ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\CompareIdenticalValues.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\CovariantEquals.ql.
+[36/243 eval 93ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\CovariantCompareTo.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\EqualsArray.ql.
+[37/243 eval 84ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\CovariantEquals.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\HashedButNoHash.ql.
+[38/243 eval 59ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\EqualsArray.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\IncomparableEquals.ql.
+[39/243 eval 179ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\HashedButNoHash.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\InconsistentCompareTo.ql.
+[40/243 eval 140ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\IncomparableEquals.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\InconsistentEqualsHashCode.ql.
+[41/243 eval 136ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\InconsistentCompareTo.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\MissingInstanceofInEquals.ql.
+[42/243 eval 40ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\InconsistentEqualsHashCode.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\RefEqBoxed.ql.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\StringComparison.ql.
+[43/243 eval 84ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\MissingInstanceofInEquals.bqrs.
+[44/243 eval 11ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\RefEqBoxed.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\UselessComparisonTest.ql.
+[45/243 eval 94ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\StringComparison.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Comparison\WrongNanComparison.ql.
+[46/243 eval 97ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\UselessComparisonTest.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\CallsToConditionWait.ql.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\CallsToRunnableRun.ql.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\DateFormatThreadUnsafe.ql.
+[47/243 eval 27ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Comparison\WrongNanComparison.bqrs.
+[48/243 eval 17ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\CallsToConditionWait.bqrs.
+[49/243 eval 13ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\CallsToRunnableRun.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\DoubleCheckedLocking.ql.
+[50/243 eval 62ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\DateFormatThreadUnsafe.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\DoubleCheckedLockingWithInitRace.ql.
+[51/243 eval 226ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\DoubleCheckedLocking.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\FutileSynchOnField.ql.
+[52/243 eval 117ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\DoubleCheckedLockingWithInitRace.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\NonSynchronizedOverride.ql.
+[53/243 eval 21ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\FutileSynchOnField.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\NotifyNotNotifyAll.ql.
+[54/243 eval 130ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\NonSynchronizedOverride.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\SleepWithLock.ql.
+[55/243 eval 36ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\NotifyNotNotifyAll.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\StartInConstructor.ql.
+[56/243 eval 40ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\SleepWithLock.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\SynchOnBoxedType.ql.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\SynchSetUnsynchGet.ql.
+[57/243 eval 71ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\StartInConstructor.bqrs.
+[58/243 eval 8ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\SynchOnBoxedType.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\SynchWriteObject.ql.
+[59/243 eval 99ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\SynchSetUnsynchGet.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Concurrency\UnreleasedLock.ql.
+[60/243 eval 171ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\SynchWriteObject.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Finalization\NullifiedSuperFinalize.ql.
+[61/243 eval 13ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Concurrency\UnreleasedLock.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Frameworks\JUnit\BadSuiteMethod.ql.
+[62/243 eval 14ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Finalization\NullifiedSuperFinalize.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Frameworks\Swing\BadlyOverriddenAdapter.ql.
+[63/243 eval 33ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Frameworks\JUnit\BadSuiteMethod.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Inheritance\NoNonFinalInConstructor.ql.
+[64/243 eval 16ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Frameworks\Swing\BadlyOverriddenAdapter.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\ContainerSizeCmpZero.ql.
+[65/243 eval 212ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Inheritance\NoNonFinalInConstructor.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\ContradictoryTypeChecks.ql.
+[66/243 eval 70ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\ContainerSizeCmpZero.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\DangerousNonCircuitLogic.ql.
+[67/243 eval 7ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\ContradictoryTypeChecks.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\EqualsTypo.ql.
+[68/243 eval 14ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\DangerousNonCircuitLogic.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\HashCodeTypo.ql.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\MissingFormatArg.ql.
+[69/243 eval 43ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\EqualsTypo.bqrs.
+[70/243 eval 14ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\HashCodeTypo.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\MissingSpaceTypo.ql.
+[71/243 eval 162ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\MissingFormatArg.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\SelfAssignment.ql.
+[72/243 eval 87ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\MissingSpaceTypo.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\StringBufferCharInit.ql.
+[73/243 eval 35ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\SelfAssignment.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\SuspiciousDateFormat.ql.
+[74/243 eval 47ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\StringBufferCharInit.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\ToStringTypo.ql.
+[75/243 eval 18ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\SuspiciousDateFormat.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Likely Typos\UnusedFormatArg.ql.
+[76/243 eval 16ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\ToStringTypo.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Nullness\NullAlways.ql.
+[77/243 eval 29ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Likely Typos\UnusedFormatArg.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Nullness\NullExprDeref.ql.
+[78/243 eval 311ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Nullness\NullAlways.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Nullness\NullMaybe.ql.
+[79/243 eval 101ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Nullness\NullExprDeref.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Reflection\AnnotationPresentCheck.ql.
+[80/243 eval 462ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Nullness\NullMaybe.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Resource Leaks\CloseReader.ql.
+[81/243 eval 58ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Reflection\AnnotationPresentCheck.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Resource Leaks\CloseSql.ql.
+Starting evaluation of codeql\java-queries\Likely Bugs\Resource Leaks\CloseWriter.ql.
+Starting evaluation of codeql\java-queries\Likely Bugs\Serialization\IncorrectSerializableMethods.ql.
+[82/243 eval 739ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Resource Leaks\CloseReader.bqrs.
+[83/243 eval 11ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Resource Leaks\CloseSql.bqrs.
+[84/243 eval 12ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Resource Leaks\CloseWriter.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Serialization\IncorrectSerialVersionUID.ql.
+[85/243 eval 270ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Serialization\IncorrectSerializableMethods.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Serialization\MissingVoidConstructorOnExternalizable.ql.
+[86/243 eval 22ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Serialization\IncorrectSerialVersionUID.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Serialization\MissingVoidConstructorsOnSerializable.ql.
+[87/243 eval 167ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Serialization\MissingVoidConstructorOnExternalizable.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Serialization\NonSerializableInnerClass.ql.
+[88/243 eval 68ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Serialization\MissingVoidConstructorsOnSerializable.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Serialization\ReadResolveObject.ql.
+[89/243 eval 188ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Serialization\NonSerializableInnerClass.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Statements\ContinueInFalseLoop.ql.
+Starting evaluation of codeql\java-queries\Likely Bugs\Statements\MissingEnumInSwitch.ql.
+[90/243 eval 22ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Serialization\ReadResolveObject.bqrs.
+[91/243 eval 11ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Statements\ContinueInFalseLoop.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Statements\PartiallyMaskedCatch.ql.
+[92/243 eval 15ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Statements\MissingEnumInSwitch.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Statements\UseBraces.ql.
+[93/243 eval 56ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Statements\PartiallyMaskedCatch.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Termination\ConstantLoopCondition.ql.
+[94/243 eval 8ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Statements\UseBraces.bqrs.
+Starting evaluation of codeql\java-queries\Likely Bugs\Termination\SpinOnField.ql.
+Starting evaluation of codeql\java-queries\Metrics\Summaries\LinesOfCode.ql.
+[95/243 eval 140ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Termination\ConstantLoopCondition.bqrs.
+[96/243 eval 11ms] Evaluation done; writing results to codeql\java-queries\Likely Bugs\Termination\SpinOnField.bqrs.
+Starting evaluation of codeql\java-queries\Metrics\Summaries\LinesOfCodeJava.ql.
+Starting evaluation of codeql\java-queries\Metrics\Summaries\LinesOfCodeKotlin.ql.
+Starting evaluation of codeql\java-queries\Performance\InefficientEmptyStringTest.ql.
+[97/243 eval 52ms] Evaluation done; writing results to codeql\java-queries\Metrics\Summaries\LinesOfCode.bqrs.
+[98/243 eval 14ms] Evaluation done; writing results to codeql\java-queries\Metrics\Summaries\LinesOfCodeJava.bqrs.
+[99/243 eval 14ms] Evaluation done; writing results to codeql\java-queries\Metrics\Summaries\LinesOfCodeKotlin.bqrs.
+Starting evaluation of codeql\java-queries\Performance\InefficientKeySetIterator.ql.
+Starting evaluation of codeql\java-queries\Performance\InefficientOutputStream.ql.
+[100/243 eval 24ms] Evaluation done; writing results to codeql\java-queries\Performance\InefficientEmptyStringTest.bqrs.
+[101/243 eval 5ms] Evaluation done; writing results to codeql\java-queries\Performance\InefficientKeySetIterator.bqrs.
+Starting evaluation of codeql\java-queries\Performance\InefficientPrimConstructor.ql.
+[102/243 eval 177ms] Evaluation done; writing results to codeql\java-queries\Performance\InefficientOutputStream.bqrs.
+Starting evaluation of codeql\java-queries\Performance\InnerClassCouldBeStatic.ql.
+[103/243 eval 25ms] Evaluation done; writing results to codeql\java-queries\Performance\InefficientPrimConstructor.bqrs.
+Starting evaluation of codeql\java-queries\Performance\NewStringString.ql.
+[104/243 eval 201ms] Evaluation done; writing results to codeql\java-queries\Performance\InnerClassCouldBeStatic.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-020\OverlyLargeRange.ql.
+[105/243 eval 17ms] Evaluation done; writing results to codeql\java-queries\Performance\NewStringString.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-022\TaintedPath.ql.
+[106/243 eval 1.7s] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-020\OverlyLargeRange.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-022\ZipSlip.ql.
+[107/243 eval 354ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-022\TaintedPath.bqrs.
+[108/243 eval 136ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-022\ZipSlip.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-023\PartialPathTraversal.ql.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-023\PartialPathTraversalFromRemote.ql.
+[109/243 eval 30ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-023\PartialPathTraversal.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-074\JndiInjection.ql.
+[110/243 eval 75ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-023\PartialPathTraversalFromRemote.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-074\XsltInjection.ql.
+[111/243 eval 142ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-074\JndiInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-078\ExecRelative.ql.
+[112/243 eval 125ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-074\XsltInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-078\ExecTainted.ql.
+[113/243 eval 106ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-078\ExecRelative.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-078\ExecTaintedEnvironment.ql.
+[114/243 eval 131ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-078\ExecTainted.bqrs.
+[115/243 eval 143ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-078\ExecTaintedEnvironment.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-078\ExecUnescaped.ql.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-079\AndroidWebViewAddJavascriptInterface.ql.
+[116/243 eval 15ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-078\ExecUnescaped.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-079\AndroidWebViewSettingsEnabledJavaScript.ql.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-079\XSS.ql.
+[117/243 eval 28ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-079\AndroidWebViewAddJavascriptInterface.bqrs.
+[118/243 eval 14ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-079\AndroidWebViewSettingsEnabledJavaScript.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-089\SqlConcatenated.ql.
+[119/243 eval 203ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-079\XSS.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-089\SqlTainted.ql.
+[120/243 eval 341ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-089\SqlConcatenated.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-090\LdapInjection.ql.
+[121/243 eval 9ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-089\SqlTainted.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-094\ArbitraryApkInstallation.ql.
+[122/243 eval 105ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-090\LdapInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-094\GroovyInjection.ql.
+[123/243 eval 135ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-094\ArbitraryApkInstallation.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-094\InsecureBeanValidation.ql.
+[124/243 eval 98ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-094\GroovyInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-094\JexlInjection.ql.
+[125/243 eval 147ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-094\InsecureBeanValidation.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-094\MvelInjection.ql.
+[126/243 eval 58ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-094\JexlInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-094\SpelInjection.ql.
+[127/243 eval 90ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-094\MvelInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-094\TemplateInjection.ql.
+[128/243 eval 61ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-094\SpelInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-1104\MavenPomDependsOnBintray.ql.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-113\NettyResponseSplitting.ql.
+[129/243 eval 91ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-094\TemplateInjection.bqrs.
+[130/243 eval 6ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-1104\MavenPomDependsOnBintray.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-113\ResponseSplitting.ql.
+[131/243 eval 50ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-113\NettyResponseSplitting.bqrs.
+[132/243 eval 90ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-113\ResponseSplitting.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-117\LogInjection.ql.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-1204\StaticInitializationVector.ql.
+[133/243 eval 214ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-117\LogInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-129\ImproperValidationOfArrayConstruction.ql.
+[134/243 eval 590ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-1204\StaticInitializationVector.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-129\ImproperValidationOfArrayIndex.ql.
+[135/243 eval 98ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-129\ImproperValidationOfArrayConstruction.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-134\ExternallyControlledFormatString.ql.
+[136/243 eval 11ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-129\ImproperValidationOfArrayIndex.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-190\ArithmeticTainted.ql.
+[137/243 eval 63ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-134\ExternallyControlledFormatString.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-190\ArithmeticUncontrolled.ql.
+[138/243 eval 59ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-190\ArithmeticTainted.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-190\ComparisonWithWiderType.ql.
+[139/243 eval 50ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-190\ArithmeticUncontrolled.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-200\AndroidSensitiveNotifications.ql.
+[140/243 eval 47ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-190\ComparisonWithWiderType.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-200\AndroidSensitiveTextField.ql.
+[141/243 eval 282ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-200\AndroidSensitiveNotifications.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-200\AndroidWebViewSettingsAllowsContentAccess.ql.
+[142/243 eval 73ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-200\AndroidSensitiveTextField.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-200\AndroidWebViewSettingsFileAccess.ql.
+[143/243 eval 163ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-200\AndroidWebViewSettingsAllowsContentAccess.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-200\SpringBootActuators.ql.
+[144/243 eval 17ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-200\AndroidWebViewSettingsFileAccess.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-200\SpringBootActuatorsConfig\SpringBootActuatorsConfig.ql.
+[145/243 eval 40ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-200\SpringBootActuators.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-200\TempDirLocalInformationDisclosure.ql.
+[146/243 eval 61ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-200\SpringBootActuatorsConfig\SpringBootActuatorsConfig.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-209\SensitiveDataExposureThroughErrorMessage.ql.
+[147/243 eval 155ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-200\TempDirLocalInformationDisclosure.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-209\StackTraceExposure.ql.
+[148/243 eval 133ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-209\SensitiveDataExposureThroughErrorMessage.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-266\IntentUriPermissionManipulation.ql.
+[149/243 eval 35ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-209\StackTraceExposure.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-273\UnsafeCertTrust.ql.
+[150/243 eval 48ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-266\IntentUriPermissionManipulation.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-287\AndroidInsecureKeys.ql.
+[151/243 eval 51ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-273\UnsafeCertTrust.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-287\AndroidInsecureLocalAuthentication.ql.
+[152/243 eval 12ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-287\AndroidInsecureKeys.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-295\AndroidMissingCertificatePinning.ql.
+[153/243 eval 18ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-287\AndroidInsecureLocalAuthentication.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-295\ImproperWebViewCertificateValidation.ql.
+[154/243 eval 25ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-295\AndroidMissingCertificatePinning.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-295\InsecureTrustManager.ql.
+[155/243 eval 79ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-295\ImproperWebViewCertificateValidation.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-297\InsecureJavaMail.ql.
+[156/243 eval 327ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-295\InsecureTrustManager.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-297\UnsafeHostnameVerification.ql.
+[157/243 eval 14ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-297\InsecureJavaMail.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-312\AllowBackupAttributeEnabled.ql.
+[158/243 eval 95ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-297\UnsafeHostnameVerification.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-312\CleartextStorageAndroidDatabase.ql.
+[159/243 eval 125ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-312\AllowBackupAttributeEnabled.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-312\CleartextStorageAndroidFilesystem.ql.
+[160/243 eval 60ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-312\CleartextStorageAndroidDatabase.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-312\CleartextStorageCookie.ql.
+[161/243 eval 61ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-312\CleartextStorageAndroidFilesystem.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-312\CleartextStorageProperties.ql.
+[162/243 eval 83ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-312\CleartextStorageCookie.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-312\CleartextStorageSharedPrefs.ql.
+[163/243 eval 48ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-312\CleartextStorageProperties.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-326\InsufficientKeySize.ql.
+[164/243 eval 61ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-312\CleartextStorageSharedPrefs.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-327\BrokenCryptoAlgorithm.ql.
+[165/243 eval 139ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-326\InsufficientKeySize.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-327\MaybeBrokenCryptoAlgorithm.ql.
+[166/243 eval 130ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-327\BrokenCryptoAlgorithm.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-330\InsecureRandomness.ql.
+[167/243 eval 37ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-327\MaybeBrokenCryptoAlgorithm.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-335\PredictableSeed.ql.
+[168/243 eval 106ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-330\InsecureRandomness.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-338\JHipsterGeneratedPRNG.ql.
+[169/243 eval 42ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-335\PredictableSeed.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-347\MissingJWTSignatureCheck.ql.
+[170/243 eval 35ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-338\JHipsterGeneratedPRNG.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-352\CsrfUnprotectedRequestType.ql.
+[171/243 eval 71ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-347\MissingJWTSignatureCheck.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-352\SpringCSRFProtection.ql.
+[172/243 eval 90ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-352\CsrfUnprotectedRequestType.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-367\TOCTOURace.ql.
+[173/243 eval 53ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-352\SpringCSRFProtection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-421\SocketAuthRace.ql.
+[174/243 eval 50ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-367\TOCTOURace.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-441\UnsafeContentUriResolution.ql.
+[175/243 eval 348ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-421\SocketAuthRace.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-470\FragmentInjection.ql.
+[176/243 eval 31ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-441\UnsafeContentUriResolution.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-470\FragmentInjectionInPreferenceActivity.ql.
+[177/243 eval 93ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-470\FragmentInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-489\DebuggableAttributeEnabled.ql.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-489\WebviewDebuggingEnabled.ql.
+[178/243 eval 38ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-470\FragmentInjectionInPreferenceActivity.bqrs.
+[179/243 eval 4ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-489\DebuggableAttributeEnabled.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-501\TrustBoundaryViolation.ql.
+[180/243 eval 65ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-489\WebviewDebuggingEnabled.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-502\UnsafeDeserialization.ql.
+[181/243 eval 166ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-501\TrustBoundaryViolation.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-522\InsecureBasicAuth.ql.
+[182/243 eval 295ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-502\UnsafeDeserialization.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-522\InsecureLdapAuth.ql.
+[183/243 eval 32ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-522\InsecureBasicAuth.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-524\SensitiveKeyboardCache.ql.
+[184/243 eval 54ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-522\InsecureLdapAuth.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-532\SensitiveInfoLog.ql.
+[185/243 eval 59ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-524\SensitiveKeyboardCache.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-552\UrlForward.ql.
+[186/243 eval 1.2s] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-532\SensitiveInfoLog.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-601\UrlRedirect.ql.
+[187/243 eval 333ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-552\UrlForward.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-611\XXE.ql.
+[188/243 eval 112ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-601\UrlRedirect.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-614\InsecureCookie.ql.
+[189/243 eval 123ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-611\XXE.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-643\XPathInjection.ql.
+[190/243 eval 25ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-614\InsecureCookie.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-676\PotentiallyDangerousFunction.ql.
+[191/243 eval 86ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-643\XPathInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-681\NumericCastTainted.ql.
+[192/243 eval 52ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-676\PotentiallyDangerousFunction.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-730\PolynomialReDoS.ql.
+[193/243 eval 77ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-681\NumericCastTainted.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-730\ReDoS.ql.
+[194/243 eval 455ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-730\PolynomialReDoS.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-730\RegexInjection.ql.
+[195/243 eval 116ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-730\ReDoS.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-732\ReadingFromWorldWritableFile.ql.
+[196/243 eval 30ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-730\RegexInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-749\UnsafeAndroidAccess.ql.
+[197/243 eval 29ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-732\ReadingFromWorldWritableFile.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-780\RsaWithoutOaep.ql.
+[198/243 eval 32ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-749\UnsafeAndroidAccess.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-807\ConditionalBypass.ql.
+[199/243 eval 40ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-780\RsaWithoutOaep.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-807\TaintedPermissionsCheck.ql.
+[200/243 eval 115ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-807\ConditionalBypass.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-829\InsecureDependencyResolution.ql.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-835\InfiniteLoop.ql.
+[201/243 eval 111ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-807\TaintedPermissionsCheck.bqrs.
+[202/243 eval 10ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-829\InsecureDependencyResolution.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-917\OgnlInjection.ql.
+[203/243 eval 33ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-835\InfiniteLoop.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-918\RequestForgery.ql.
+[204/243 eval 86ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-917\OgnlInjection.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-925\ImproperIntentVerification.ql.
+[205/243 eval 74ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-918\RequestForgery.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-926\ContentProviderIncompletePermissions.ql.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-926\ImplicitlyExportedAndroidComponent.ql.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-927\ImplicitPendingIntents.ql.
+[206/243 eval 26ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-925\ImproperIntentVerification.bqrs.
+[207/243 eval 11ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-926\ContentProviderIncompletePermissions.bqrs.
+[208/243 eval 11ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-926\ImplicitlyExportedAndroidComponent.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-927\SensitiveCommunication.ql.
+[209/243 eval 144ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-927\ImplicitPendingIntents.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-927\SensitiveResultReceiver.ql.
+[210/243 eval 35ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-927\SensitiveCommunication.bqrs.
+Starting evaluation of codeql\java-queries\Security\CWE\CWE-940\AndroidIntentRedirection.ql.
+[211/243 eval 115ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-927\SensitiveResultReceiver.bqrs.
+Starting evaluation of codeql\java-queries\Telemetry\DatabaseQualityDiagnostics.ql.
+[212/243 eval 99ms] Evaluation done; writing results to codeql\java-queries\Security\CWE\CWE-940\AndroidIntentRedirection.bqrs.
+Starting evaluation of codeql\java-queries\Telemetry\ExternalLibraryUsage.ql.
+[213/243 eval 240ms] Evaluation done; writing results to codeql\java-queries\Telemetry\DatabaseQualityDiagnostics.bqrs.
+Starting evaluation of codeql\java-queries\Telemetry\ExtractorInformation.ql.
+[214/243 eval 392ms] Evaluation done; writing results to codeql\java-queries\Telemetry\ExternalLibraryUsage.bqrs.
+Starting evaluation of codeql\java-queries\Telemetry\SupportedExternalApis.ql.
+[215/243 eval 102ms] Evaluation done; writing results to codeql\java-queries\Telemetry\ExtractorInformation.bqrs.
+Starting evaluation of codeql\java-queries\Telemetry\SupportedExternalSinks.ql.
+[216/243 eval 705ms] Evaluation done; writing results to codeql\java-queries\Telemetry\SupportedExternalApis.bqrs.
+[217/243 eval 159ms] Evaluation done; writing results to codeql\java-queries\Telemetry\SupportedExternalSinks.bqrs.
+Starting evaluation of codeql\java-queries\Telemetry\SupportedExternalSources.ql.
+Starting evaluation of codeql\java-queries\Telemetry\SupportedExternalTaint.ql.
+[218/243 eval 161ms] Evaluation done; writing results to codeql\java-queries\Telemetry\SupportedExternalSources.bqrs.
+Starting evaluation of codeql\java-queries\Telemetry\UnsupportedExternalAPIs.ql.
+[219/243 eval 77ms] Evaluation done; writing results to codeql\java-queries\Telemetry\SupportedExternalTaint.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Boxed Types\BoxedVariable.ql.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Dead Code\CreatesEmptyZip.ql.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Dead Code\DeadRefTypes.ql.
+[220/243 eval 32ms] Evaluation done; writing results to codeql\java-queries\Telemetry\UnsupportedExternalAPIs.bqrs.
+[221/243 eval 8ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Boxed Types\BoxedVariable.bqrs.
+[222/243 eval 13ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Dead Code\CreatesEmptyZip.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Dead Code\InterfaceCannotBeImplemented.ql.
+[223/243 eval 391ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Dead Code\DeadRefTypes.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Dead Code\UnreadLocal.ql.
+[224/243 eval 51ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Dead Code\InterfaceCannotBeImplemented.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Dead Code\UnusedLabel.ql.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Declarations\NoConstantsOnly.ql.
+[225/243 eval 16ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Dead Code\UnreadLocal.bqrs.
+[226/243 eval 13ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Dead Code\UnusedLabel.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Exception Handling\IgnoreExceptionalReturn.ql.
+[227/243 eval 59ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Declarations\NoConstantsOnly.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Exception Handling\NumberFormatException.ql.
+[228/243 eval 42ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Exception Handling\IgnoreExceptionalReturn.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Implementation Hiding\AbstractToConcreteCollection.ql.
+[229/243 eval 62ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Exception Handling\NumberFormatException.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Implementation Hiding\ExposeRepresentation.ql.
+[230/243 eval 40ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Implementation Hiding\AbstractToConcreteCollection.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Implementation Hiding\GetClassGetResource.ql.
+[231/243 eval 148ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Implementation Hiding\ExposeRepresentation.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Naming Conventions\AmbiguousOuterSuper.ql.
+[232/243 eval 119ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Implementation Hiding\GetClassGetResource.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Naming Conventions\ConfusingMethodNames.ql.
+[233/243 eval 42ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Naming Conventions\AmbiguousOuterSuper.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Naming Conventions\ConfusingOverloading.ql.
+[234/243 eval 323ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Naming Conventions\ConfusingMethodNames.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Naming Conventions\FieldMasksSuperField.ql.
+[235/243 eval 551ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Naming Conventions\ConfusingOverloading.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Naming Conventions\LocalShadowsFieldConfusing.ql.
+[236/243 eval 36ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Naming Conventions\FieldMasksSuperField.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Naming Conventions\SameNameAsSuper.ql.
+[237/243 eval 28ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Naming Conventions\LocalShadowsFieldConfusing.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Undesirable Calls\CallsToRunFinalizersOnExit.ql.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Undesirable Calls\CallsToStringToString.ql.
+[238/243 eval 39ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Naming Conventions\SameNameAsSuper.bqrs.
+[239/243 eval 13ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Undesirable Calls\CallsToRunFinalizersOnExit.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Undesirable Calls\DefaultToString.ql.
+[240/243 eval 19ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Undesirable Calls\CallsToStringToString.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Undesirable Calls\NextFromIterator.ql.
+[241/243 eval 73ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Undesirable Calls\DefaultToString.bqrs.
+Starting evaluation of codeql\java-queries\Violations of Best Practice\Undesirable Calls\PrintLnArray.ql.
+[242/243 eval 68ms] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Undesirable Calls\NextFromIterator.bqrs.
+[243/243 eval 10.3s] Evaluation done; writing results to codeql\java-queries\Violations of Best Practice\Undesirable Calls\PrintLnArray.bqrs.
+Shutting down query evaluator.
+Interpreting results.
+CodeQL scanned 447 out of 1954 Java/Kotlin files in this invocation. Typically CodeQL is configured to analyze a single CodeQL language per invocation, so check other invocations to determine overall coverage information.

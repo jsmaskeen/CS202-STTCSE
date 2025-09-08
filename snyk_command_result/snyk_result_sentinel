@@ -1,0 +1,291 @@
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel>snyk code test --sarif-file-output=../snyk_results_sentinel.sarif
+
+Testing C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel ...
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF) 
+   Path: sentinel-demo/sentinel-demo-spring-webflux/src/main/java/com/alibaba/csp/sentinel/demo/spring/webflux/controller/BazController.java, line 47 
+   Info: The value parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Trust Boundary Violation 
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/AuthController.java, line 74 
+   Info: Unsanitized input from an HTTP parameter flows into setAttribute where it is used to modify the HTTP session object. This could result in mixing trusted and untrusted data in the same data structure, thus increasing the likelihood to mistakenly trust unvalidated data.
+
+ ✗ [Low] Cross-site Scripting (XSS) 
+   Path: sentinel-adapter/sentinel-apache-httpclient-adapter/src/test/java/com/alibaba/csp/sentinel/adapter/apache/httpclient/app/controller/TestController.java, line 35 
+   Info: Unsanitized input from the request URL flows into here, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+ ✗ [Low] Cross-site Scripting (XSS) 
+   Path: sentinel-adapter/sentinel-okhttp-adapter/src/test/java/com/alibaba/csp/sentinel/adapter/okhttp/app/controller/TestController.java, line 35 
+   Info: Unsanitized input from the request URL flows into here, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF) 
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/AuthorityRuleController.java, line 121 
+   Info: The entity parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF) 
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/AuthorityRuleController.java, line 145 
+   Info: The entity parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/DegradeController.java, line 92
+   Info: The entity parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/DegradeController.java, line 115
+   Info: The entity parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/FlowControllerV1.java, line 146
+   Info: The entity parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/ParamFlowRuleController.java, line 126
+   Info: The entity parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/ParamFlowRuleController.java, line 196
+   Info: The entity parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/v2/FlowControllerV2.java, line 139
+   Info: The entity parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/v2/FlowControllerV2.java, line 165
+   Info: The entity parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterAssignController.java, line 52
+   Info: The assignRequest parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterAssignController.java, line 72
+   Info: The assignRequest parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterAssignController.java, line 90
+   Info: The machineIds parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterConfigController.java, line 71
+   Info: The payload parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/gateway/GatewayApiController.java, line 85
+   Info: The reqVo parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/gateway/GatewayApiController.java, line 168
+   Info: The reqVo parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/gateway/GatewayFlowRuleController.java, line 88
+   Info: The reqVo parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Low] Spring Cross-Site Request Forgery (CSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/gateway/GatewayFlowRuleController.java, line 255
+   Info: The reqVo parameter is vulnerable to Cross Site Request Forgery (CSRF) attacks due to not using Spring Security. This could allow an attacker to execute requests on a user's behalf. Consider including Spring Security's CSRF protection within your application.
+
+ ✗ [Medium] Path Traversal
+   Path: sentinel-core/src/main/java/com/alibaba/csp/sentinel/config/SentinelConfigLoader.java, line 63
+   Info: Unsanitized input from an environment path variable flows into exists, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to bypass the logic of the application in the conditional expression.
+
+ ✗ [Medium] Path Traversal
+   Path: sentinel-core/src/main/java/com/alibaba/csp/sentinel/log/LogConfigLoader.java, line 60
+   Info: Unsanitized input from an environment path variable flows into exists, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to bypass the logic of the application in the conditional expression.
+
+ ✗ [Medium] Path Traversal
+   Path: sentinel-demo/sentinel-demo-quarkus/.mvn/wrapper/MavenWrapperDownloader.java, line 57
+   Info: Unsanitized input from a command line argument flows into exists, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to bypass the logic of the application in the conditional expression.
+
+ ✗ [Medium] Path Traversal
+   Path: sentinel-demo/sentinel-demo-quarkus/.mvn/wrapper/MavenWrapperDownloader.java, line 79
+   Info: Unsanitized input from a command line argument flows into exists, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to bypass the logic of the application in the conditional expression.
+
+ ✗ [Medium] Server-Side Request Forgery (SSRF)
+   Path: sentinel-core/src/main/java/com/alibaba/csp/sentinel/config/SentinelConfigLoader.java, line 63
+   Info: Unsanitized input from an environment path variable flows into openStream, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [Medium] Server-Side Request Forgery (SSRF)
+   Path: sentinel-core/src/main/java/com/alibaba/csp/sentinel/log/LogConfigLoader.java, line 60
+   Info: Unsanitized input from an environment path variable flows into openStream, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [Medium] Observable Timing Discrepancy (Timing Attack)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/AuthController.java, line 68
+   Info: An attacker can guess the secret value of password because it is compared using equals, which is vulnerable to timing attacks. Use java.security.MessageDigest.isEqual to compare values securely.
+
+ ✗ [Medium] Improper Certificate Validation
+   Path: sentinel-transport/sentinel-transport-common/src/main/java/com/alibaba/csp/sentinel/transport/ssl/SslFactory.java, line 35
+   Info: TrustManager might be too permissive: all servers are trusted.
+
+ ✗ [Medium] Improper Certificate Validation
+   Path: sentinel-transport/sentinel-transport-common/src/main/java/com/alibaba/csp/sentinel/transport/ssl/SslFactory.java, line 39
+   Info: TrustManager might be too permissive: all clients are trusted.
+
+ ✗ [Medium] Improper Certificate Validation
+   Path: sentinel-transport/sentinel-transport-common/src/main/java/com/alibaba/csp/sentinel/transport/ssl/SslFactory.java, line 43
+   Info: TrustManager might be too permissive: all Certificate Authorities are trusted.
+
+ ✗ [Medium] Path Traversal
+   Path: sentinel-demo/sentinel-demo-quarkus/.mvn/wrapper/MavenWrapperDownloader.java, line 60
+   Info: Unsanitized input from a command line argument flows into java.io.FileInputStream, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.
+
+ ✗ [Medium] Cross-site Scripting (XSS)
+   Path: sentinel-demo/sentinel-demo-apache-httpclient/src/main/java/com/alibaba/csp/sentinel/demo/apache/httpclient/controller/ApacheHttpClientTestController.java, line 75
+   Info: Unsanitized input from data from a remote resource flows into here, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+ ✗ [Medium] Path Traversal
+   Path: sentinel-demo/sentinel-demo-quarkus/.mvn/wrapper/MavenWrapperDownloader.java, line 80
+   Info: Unsanitized input from a command line argument flows into mkdirs, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to manipulate arbitrary files.
+
+ ✗ [Medium] Path Traversal
+   Path: sentinel-demo/sentinel-demo-quarkus/.mvn/wrapper/MavenWrapperDownloader.java, line 111
+   Info: Unsanitized input from a command line argument flows into java.io.FileOutputStream, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to write to arbitrary files.      
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/AuthorityRuleController.java, line 81
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/AuthorityRuleController.java, line 195
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/DegradeController.java, line 81
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/DegradeController.java, line 172
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/FlowControllerV1.java, line 85
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/FlowControllerV1.java, line 279
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/ParamFlowRuleController.java, line 103
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/ParamFlowRuleController.java, line 263
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/ResourceController.java, line 70
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/ResourceController.java, line 79
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/SystemController.java, line 83
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/SystemController.java, line 254
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterAssignController.java, line 62
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterAssignController.java, line 80
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterConfigController.java, line 136
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/gateway/GatewayApiController.java, line 74
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/gateway/GatewayApiController.java, line 258
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/gateway/GatewayFlowRuleController.java, line 77
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/gateway/GatewayFlowRuleController.java, line 429
+   Info: Unsanitized input from an HTTP parameter flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterAssignController.java, line 98
+   Info: Unsanitized input from the request URL flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterConfigController.java, line 154
+   Info: Unsanitized input from the request URL flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterConfigController.java, line 173
+   Info: Unsanitized input from the request URL flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterConfigController.java, line 192
+   Info: Unsanitized input from the request URL flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-demo/sentinel-demo-apache-httpclient/src/main/java/com/alibaba/csp/sentinel/demo/apache/httpclient/controller/ApacheHttpClientTestController.java, line 95
+   Info: Unsanitized input from the request URL flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterConfigController.java, line 86
+   Info: Unsanitized input from the HTTP request body flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-dashboard/src/main/java/com/alibaba/csp/sentinel/dashboard/controller/cluster/ClusterConfigController.java, line 95
+   Info: Unsanitized input from the HTTP request body flows into org.apache.http.client.methods.HttpGet, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Server-Side Request Forgery (SSRF)
+   Path: sentinel-demo/sentinel-demo-okhttp/src/main/java/com/alibaba/csp/sentinel/demo/okhttp/controller/OkHttpTestController.java, line 73
+   Info: Unsanitized input from the request URL flows into url, where it is used as an URL to perform a request. This may result in a Server-Side Request Forgery vulnerability.
+
+ ✗ [High] Cross-site Scripting (XSS)
+   Path: sentinel-demo/sentinel-demo-annotation-spring-aop/src/main/java/com/alibaba/csp/sentinel/demo/annotation/aop/controller/DemoController.java, line 47
+   Info: Unsanitized input from an HTTP parameter flows into here, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+ ✗ [High] Cross-site Scripting (XSS)
+   Path: sentinel-demo/sentinel-demo-annotation-spring-aop/src/main/java/com/alibaba/csp/sentinel/demo/annotation/aop/controller/DemoController.java, line 52
+   Info: Unsanitized input from the request URL flows into here, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+ ✗ [High] Cross-site Scripting (XSS)
+   Path: sentinel-demo/sentinel-demo-apache-httpclient/src/main/java/com/alibaba/csp/sentinel/demo/apache/httpclient/controller/ApacheHttpClientTestController.java, line 54
+   Info: Unsanitized input from the request URL flows into here, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+ ✗ [High] Cross-site Scripting (XSS)
+   Path: sentinel-demo/sentinel-demo-apache-httpclient/src/main/java/com/alibaba/csp/sentinel/demo/apache/httpclient/controller/ApacheHttpClientTestController.java, line 96
+   Info: Unsanitized input from the request URL flows into here, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+ ✗ [High] Cross-site Scripting (XSS)
+   Path: sentinel-demo/sentinel-demo-cluster/sentinel-demo-cluster-embedded/src/main/java/com/alibaba/csp/sentinel/demo/cluster/app/controller/ClusterDemoController.java, line 36
+   Info: Unsanitized input from the request URL flows into here, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+ ✗ [High] Cross-site Scripting (XSS)
+   Path: sentinel-demo/sentinel-demo-okhttp/src/main/java/com/alibaba/csp/sentinel/demo/okhttp/controller/OkHttpTestController.java, line 59
+   Info: Unsanitized input from the request URL flows into here, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+ ✗ [High] Cross-site Scripting (XSS)
+   Path: sentinel-demo/sentinel-demo-okhttp/src/main/java/com/alibaba/csp/sentinel/demo/okhttp/controller/OkHttpTestController.java, line 64
+   Info: Unsanitized input from the request URL flows into here, where it is used to render an HTML page returned to the user. This may result in a Cross-Site Scripting attack (XSS).
+
+
+✔ Test completed
+
+Organization:      jsmaskeen
+Test type:         Static code analysis
+Project path:      C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\sentinel
+
+Summary:
+
+  69 Code issues found
+  34 [High]   14 [Medium]   21 [Low]

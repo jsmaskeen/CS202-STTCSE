@@ -1,0 +1,35 @@
+C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\guice>snyk code test --sarif-file-output=../snyk_results_guice.sarif
+
+Testing C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\guice ...
+
+ ✗ [Low] Path Traversal 
+   Path: extensions/grapher/test/com/google/inject/grapher/demo/InjectorGrapherDemo.java, line 42 
+   Info: Unsanitized input from a command line argument flows into java.io.PrintWriter, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to write to arbitrary files.
+
+ ✗ [Low] Sensitive Cookie Without 'HttpOnly' Flag 
+   Path: extensions/servlet/test/com/google/inject/servlet/ContinuingHttpServletRequestTest.java, line 30 
+   Info: Cookie misses a call to setHttpOnly. Set the HttpOnly flag to true to protect the cookie from possible malicious code on client side.
+
+ ✗ [Low] Sensitive Cookie in HTTPS Session Without 'Secure' Attribute 
+   Path: extensions/servlet/test/com/google/inject/servlet/ContinuingHttpServletRequestTest.java, line 30 
+   Info: Cookie misses a call to setSecure. Set the Secure flag to true to protect the cookie from man-in-the-middle attacks.
+
+ ✗ [Medium] Unsafe Reflection 
+   Path: extensions/jmx/src/com/google/inject/tools/jmx/Manager.java, line 94 
+   Info: Unsanitized input from a command line argument flows into java.lang.Class.forName, where it is used for Reflection. This may result in an Unsafe Reflection vulnerability.
+
+ ✗ [Medium] Struts Development Mode Enabled 
+   Path: extensions/struts2/example/src/struts.xml, line 6 
+   Info: (Beta Suggestion) Apache Struts develop mode is enabled: struts.devMode is set to true. Debug features often gives access to detailed information to attackers.
+
+
+✔ Test completed
+
+Organization:      jsmaskeen
+Test type:         Static code analysis
+Project path:      C:\Users\GSRAJA\Desktop\IIT GN\sem5\sttcse\Labs\STT_Lab_5\guice
+
+Summary:
+
+  5 Code issues found
+  2 [Medium]   3 [Low]
