@@ -4,7 +4,7 @@ digraph ControlFlowGraph {
     B0 [label="B0\n\lint i = 0;\lint x = 5;\lint y = -1;\l"];
     B1 [label="B1\n\lwhile (i < 10)\l"];
     B2 [label="B2\n\lrandom_procedure();\l"];
-    B3 [label="B3\n\li=i+1;\ly = i + x;\lprintf(\"%d\", i);\l"];
+    B3 [label="B3\n\li = i + 1;\ly = i + x;\lprintf(\"%d\", i);\l"];
     B4 [label="B4\n\lif (i > 5)\l"];
     B5 [label="B5\n\lx = i;\lprintf(\"more than 5\");\l"];
     B6 [label="B6\n\l\l"];

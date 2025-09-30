@@ -289,7 +289,7 @@ class ControlFlowGraph:
     def cc(self):
         E = sum(len(block.successors) for block in self.blocks.values())
         N = len(self.blocks)
-        return E - N + 2
+        return E,N,E - N + 2
 
     def visualize(self, filename):
         dot_source = [
