@@ -38,13 +38,13 @@ digraph ControlFlowGraph {
     B34 [label="B34\n\lfor (i = 0; i < samples; i++)\l"];
     B35 [label="B35\n\ldouble x = (double)rand() / RAND_MAX;\ldouble y = (double)rand() / RAND_MAX;\ldouble z = (double)rand() / RAND_MAX;\l"];
     B36 [label="B36\n\lif (x * x + y * y + z * z <= 1.0)\l"];
-    B37 [label="B37\n\lvolume++;\l"];
+    B37 [label="B37\n\lvolume=volume+1;\l"];
     B38 [label="B38\n\l\l"];
     B39 [label="B39\n\lvolume /= samples;\lvolume *= 8.0;\lprintf(\"Sphere volume %.10f\\n\", volume);\ldouble pi_est = 0.0;\lint hits = 0;\l"];
     B40 [label="B40\n\lfor (i = 0; i < 500000; i++)\l"];
     B41 [label="B41\n\ldouble x = (double)rand() / RAND_MAX;\ldouble y = (double)rand() / RAND_MAX;\l"];
     B42 [label="B42\n\lif (x * x + y * y <= 1.0)\l"];
-    B43 [label="B43\n\lhits++;\l"];
+    B43 [label="B43\n\lhits=hits+1;\l"];
     B44 [label="B44\n\l\l"];
     B45 [label="B45\n\lpi_est = 4.0 * hits / 500000.0;\lprintf(\"Monte Pi %.10f\\n\", pi_est);\ldouble taylor = 0.0;\ldouble xval = 1.0;\l"];
     B46 [label="B46\n\lfor (i = 0; i < 15; i++)\l"];
@@ -76,7 +76,7 @@ digraph ControlFlowGraph {
     B72 [label="B72\n\l\l"];
     B73 [label="B73\n\lprintf(\"Matrix sum %.10f\\n\", mat_sum);\lint count = 0;\ldouble seq = 0.0;\li = 0;\l"];
     B74 [label="B74\n\lwhile (i < 1000)\l"];
-    B75 [label="B75\n\ldouble t = (i + 0.5) / 1000.0;\lseq += 1.0 / (1 + t * t);\li++;\lcount++;\l"];
+    B75 [label="B75\n\ldouble t = (i + 0.5) / 1000.0;\lseq += 1.0 / (1 + t * t);\li=i+1;\lcount=count+1;\l"];
     B76 [label="B76\n\lseq /= 1000.0;\lseq *= 1.0;\lprintf(\"Pi/4 approx %.10f steps %d\\n\", seq, count);\ldouble weird = 0.0;\l"];
     B77 [label="B77\n\lfor (i = 1; i <= 100; i++)\l"];
     B78 [label="B78\n\lfor (j = 1; j <= 100; j++)\l"];

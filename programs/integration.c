@@ -114,7 +114,7 @@ int main(void)
         double z = (double)rand() / RAND_MAX;
         if (x * x + y * y + z * z <= 1.0)
         {
-            volume++;
+            volume=volume+1;
         }
     }
     volume /= samples;
@@ -129,7 +129,7 @@ int main(void)
         double y = (double)rand() / RAND_MAX;
         if (x * x + y * y <= 1.0)
         {
-            hits++;
+            hits=hits+1;
         }
     }
     pi_est = 4.0 * hits / 500000.0;
@@ -206,8 +206,8 @@ int main(void)
     {
         double t = (i + 0.5) / 1000.0;
         seq += 1.0 / (1 + t * t);
-        i++;
-        count++;
+        i=i+1;
+        count=count+1;
     }
     seq /= 1000.0;
     seq *= 1.0;

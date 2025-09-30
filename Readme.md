@@ -23,10 +23,10 @@ Stored in [`results/`](./results/)
 
 
 Defintions files:
-- [`results\dft_DFA_definitions.json`](results\dft_DFA_definitions.json)
-- [`results\integration_DFA_definitions.json`](results\integration_DFA_definitions.json)
-- [`results\labyrinth_game_DFA_definitions.json`](results\labyrinth_game_DFA_definitions.json)
-- [`results\simple_DFA_definitions.json`](results\simple_DFA_definitions.json)
+- [`results/dft_DFA_definitions.json`](results/dft_DFA_definitions.json)
+- [`results/integration_DFA_definitions.json`](results/integration_DFA_definitions.json)
+- [`results/labyrinth_game_DFA_definitions.json`](results/labyrinth_game_DFA_definitions.json)
+- [`results/simple_DFA_definitions.json`](results/simple_DFA_definitions.json)
 
 
 ```json
@@ -53,16 +53,16 @@ Here `D1` is the label of the defintion, the first entry is the variable, and th
 
 
 DFA Analysis results:
-- [`results\dft_DFA_reaching_definitions_iterations.csv`](./results\dft_DFA_reaching_definitions_iterations.csv)
-- [`results\integration_DFA_reaching_definitions_iterations.csv`](./results\integration_DFA_reaching_definitions_iterations.csv)
-- [`results\labyrinth_game_DFA_reaching_definitions_iterations.csv`](./results\labyrinth_game_DFA_reaching_definitions_iterations.csv)
-- [`results\simple_DFA_reaching_definitions_iterations.csv`](./results\simple_DFA_reaching_definitions_iterations.csv)
+- [`results/dft_DFA_reaching_definitions_iterations.csv`](./results/dft_DFA_reaching_definitions_iterations.csv)
+- [`results/integration_DFA_reaching_definitions_iterations.csv`](./results/integration_DFA_reaching_definitions_iterations.csv)
+- [`results/labyrinth_game_DFA_reaching_definitions_iterations.csv`](./results/labyrinth_game_DFA_reaching_definitions_iterations.csv)
+- [`results/simple_DFA_reaching_definitions_iterations.csv`](./results/simple_DFA_reaching_definitions_iterations.csv)
 
 Reaching defintion analysis results:
-- [`results\dft_DFA_definitions_multiple_reaching_definitions.json`](./results\dft_DFA_definitions_multiple_reaching_definitions.json)
-- [`results\integration_DFA_definitions_multiple_reaching_definitions.json`](./results\integration_DFA_definitions_multiple_reaching_definitions.json)
-- [`results\labyrinth_game_DFA_definitions_multiple_reaching_definitions.json`](./results\labyrinth_game_DFA_definitions_multiple_reaching_definitions.json)
-- [`results\simple_DFA_definitions_multiple_reaching_definitions.json`](./results\simple_DFA_definitions_multiple_reaching_definitions.json)
+- [`results/dft_DFA_definitions_multiple_reaching_definitions.json`](./results/dft_DFA_definitions_multiple_reaching_definitions.json)
+- [`results/integration_DFA_definitions_multiple_reaching_definitions.json`](./results/integration_DFA_definitions_multiple_reaching_definitions.json)
+- [`results/labyrinth_game_DFA_definitions_multiple_reaching_definitions.json`](./results/labyrinth_game_DFA_definitions_multiple_reaching_definitions.json)
+- [`results/simple_DFA_definitions_multiple_reaching_definitions.json`](./results/simple_DFA_definitions_multiple_reaching_definitions.json)
 
 
 
