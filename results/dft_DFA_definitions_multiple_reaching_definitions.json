@@ -1,0 +1,966 @@
+{
+    "B13": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B14": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B15": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B16": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B17": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B18": {
+        "sum": [
+            "D10",
+            "D20"
+        ]
+    },
+    "B19": {
+        "sum": [
+            "D10",
+            "D20"
+        ]
+    },
+    "B20": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ]
+    },
+    "B21": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ]
+    },
+    "B22": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B23": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B24": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B25": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B26": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B27": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B28": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B29": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B30": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B31": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B32": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B33": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B34": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B35": {
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ]
+    },
+    "B36": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B37": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B38": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B39": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B40": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B41": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ]
+    },
+    "B42": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ]
+    },
+    "B43": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ]
+    },
+    "B44": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ]
+    },
+    "B45": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B46": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B47": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B48": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B49": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B50": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B51": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B52": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B53": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B54": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B55": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B56": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B57": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    },
+    "B58": {
+        "in": [
+            "D1",
+            "D61"
+        ],
+        "sum": [
+            "D10",
+            "D20"
+        ],
+        "final_real_part": [
+            "D27",
+            "D29"
+        ],
+        "final_imag_part": [
+            "D28",
+            "D30"
+        ],
+        "inv_sum": [
+            "D38",
+            "D48"
+        ],
+        "inv_final_real": [
+            "D56",
+            "D58"
+        ],
+        "inv_final_imag": [
+            "D57",
+            "D59"
+        ]
+    }
+}

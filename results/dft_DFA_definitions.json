@@ -1,0 +1,254 @@
+{
+    "D1": [
+        "in",
+        "double complex in[] = {2.0, 3.0, 5.0, 7.0, 11.0};"
+    ],
+    "D2": [
+        "n",
+        "const size_t n = sizeof(in) / sizeof(in[0]);"
+    ],
+    "D3": [
+        "epsilon",
+        "const double epsilon = 1e-14;"
+    ],
+    "D4": [
+        "current_real_part",
+        "current_real_part = creal(in[i]);"
+    ],
+    "D5": [
+        "current_imag_part",
+        "current_imag_part = cimag(in[i]);"
+    ],
+    "D6": [
+        "two_pi_val",
+        "two_pi_val = 2.0 * M_PI;"
+    ],
+    "D7": [
+        "neg_two_pi_val",
+        "neg_two_pi_val = -1.0 * two_pi_val;"
+    ],
+    "D8": [
+        "n_as_double_dft",
+        "n_as_double_dft = (double)n;"
+    ],
+    "D9": [
+        "f",
+        "f = neg_two_pi_val / n_as_double_dft;"
+    ],
+    "D10": [
+        "sum",
+        "double complex sum = 0.0 + 0.0 * I;"
+    ],
+    "D11": [
+        "angle_i_component",
+        "angle_i_component = (double)i;"
+    ],
+    "D12": [
+        "angle_j_component",
+        "angle_j_component = (double)j;"
+    ],
+    "D13": [
+        "angle_product",
+        "angle_product = f * angle_i_component;"
+    ],
+    "D14": [
+        "final_angle_x",
+        "final_angle_x = angle_product * angle_j_component;"
+    ],
+    "D15": [
+        "cos_of_x",
+        "cos_of_x = cos(final_angle_x);"
+    ],
+    "D16": [
+        "sin_of_x",
+        "sin_of_x = sin(final_angle_x);"
+    ],
+    "D17": [
+        "exponential_term",
+        "exponential_term = cos_of_x + sin_of_x * I;"
+    ],
+    "D18": [
+        "input_sample",
+        "input_sample = in[j];"
+    ],
+    "D19": [
+        "term_to_add",
+        "term_to_add = input_sample * exponential_term;"
+    ],
+    "D20": [
+        "sum",
+        "sum += term_to_add;"
+    ],
+    "D21": [
+        "real_part_before_clean",
+        "real_part_before_clean = creal(sum);"
+    ],
+    "D22": [
+        "imag_part_before_clean",
+        "imag_part_before_clean = cimag(sum);"
+    ],
+    "D23": [
+        "rounded_real_part",
+        "rounded_real_part = round(real_part_before_clean);"
+    ],
+    "D24": [
+        "rounded_imag_part",
+        "rounded_imag_part = round(imag_part_before_clean);"
+    ],
+    "D25": [
+        "real_difference",
+        "real_difference = fabs(real_part_before_clean - rounded_real_part);"
+    ],
+    "D26": [
+        "imag_difference",
+        "imag_difference = fabs(imag_part_before_clean - rounded_imag_part);"
+    ],
+    "D27": [
+        "final_real_part",
+        "double final_real_part = real_part_before_clean;"
+    ],
+    "D28": [
+        "final_imag_part",
+        "double final_imag_part = imag_part_before_clean;"
+    ],
+    "D29": [
+        "final_real_part",
+        "final_real_part = rounded_real_part;"
+    ],
+    "D30": [
+        "final_imag_part",
+        "final_imag_part = rounded_imag_part;"
+    ],
+    "D31": [
+        "cleaned_value",
+        "cleaned_value = final_real_part + final_imag_part * I;"
+    ],
+    "D32": [
+        "out",
+        "out[i] = cleaned_value;"
+    ],
+    "D33": [
+        "r_dft",
+        "r_dft = creal(out[i]);"
+    ],
+    "D34": [
+        "im_dft",
+        "im_dft = cimag(out[i]);"
+    ],
+    "D35": [
+        "pos_two_pi_val",
+        "pos_two_pi_val = 2.0 * M_PI;"
+    ],
+    "D36": [
+        "n_as_double_idft",
+        "n_as_double_idft = (double)n;"
+    ],
+    "D37": [
+        "f_inverse",
+        "f_inverse = pos_two_pi_val / n_as_double_idft;"
+    ],
+    "D38": [
+        "inv_sum",
+        "double complex inv_sum = 0.0 + 0.0 * I;"
+    ],
+    "D39": [
+        "inv_angle_i_comp",
+        "inv_angle_i_comp = (double)i;"
+    ],
+    "D40": [
+        "inv_angle_j_comp",
+        "inv_angle_j_comp = (double)j;"
+    ],
+    "D41": [
+        "inv_angle_prod",
+        "inv_angle_prod = f_inverse * inv_angle_i_comp;"
+    ],
+    "D42": [
+        "final_inv_angle_x",
+        "final_inv_angle_x = inv_angle_prod * inv_angle_j_comp;"
+    ],
+    "D43": [
+        "inv_cos_x",
+        "inv_cos_x = cos(final_inv_angle_x);"
+    ],
+    "D44": [
+        "inv_sin_x",
+        "inv_sin_x = sin(final_inv_angle_x);"
+    ],
+    "D45": [
+        "inv_exp_term",
+        "inv_exp_term = inv_cos_x + inv_sin_x * I;"
+    ],
+    "D46": [
+        "dft_sample",
+        "dft_sample = out[j];"
+    ],
+    "D47": [
+        "inv_term_to_add",
+        "inv_term_to_add = dft_sample * inv_exp_term;"
+    ],
+    "D48": [
+        "inv_sum",
+        "inv_sum += inv_term_to_add;"
+    ],
+    "D49": [
+        "scaled_sum",
+        "scaled_sum = inv_sum / n_as_double_idft;"
+    ],
+    "D50": [
+        "inv_real_before_clean",
+        "inv_real_before_clean = creal(scaled_sum);"
+    ],
+    "D51": [
+        "inv_imag_before_clean",
+        "inv_imag_before_clean = cimag(scaled_sum);"
+    ],
+    "D52": [
+        "inv_rounded_real",
+        "inv_rounded_real = round(inv_real_before_clean);"
+    ],
+    "D53": [
+        "inv_rounded_imag",
+        "inv_rounded_imag = round(inv_imag_before_clean);"
+    ],
+    "D54": [
+        "inv_real_diff",
+        "inv_real_diff = fabs(inv_real_before_clean - inv_rounded_real);"
+    ],
+    "D55": [
+        "inv_imag_diff",
+        "inv_imag_diff = fabs(inv_imag_before_clean - inv_rounded_imag);"
+    ],
+    "D56": [
+        "inv_final_real",
+        "double inv_final_real = inv_real_before_clean;"
+    ],
+    "D57": [
+        "inv_final_imag",
+        "double inv_final_imag = inv_imag_before_clean;"
+    ],
+    "D58": [
+        "inv_final_real",
+        "inv_final_real = inv_rounded_real;"
+    ],
+    "D59": [
+        "inv_final_imag",
+        "inv_final_imag = inv_rounded_imag;"
+    ],
+    "D60": [
+        "inv_cleaned_value",
+        "inv_cleaned_value = inv_final_real + inv_final_imag * I;"
+    ],
+    "D61": [
+        "in",
+        "in[i] = inv_cleaned_value;"
+    ],
+    "D62": [
+        "r_idft",
+        "r_idft = creal(in[i]);"
+    ],
+    "D63": [
+        "im_idft",
+        "im_idft = cimag(in[i]);"
+    ]
+}
