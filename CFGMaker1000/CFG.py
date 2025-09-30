@@ -91,27 +91,56 @@ class ControlFlowGraph:
                 current_block = after_if_block
 
             elif instr_type == "loop":
-                if current_block.instructions:
+                if current_block.instructions and not (len(current_block.instructions) == 1 and current_block.instructions[0].strip().startswith('int j = 0;')):
                     prev_block = current_block
                     current_block = self.create_block()
                     prev_block.add_successor(current_block)
 
-                loop_condition_block = current_block
-                loop_condition_block.add_instruction(
-                    f"{instruction.get('loop_type', 'loop')} ({instruction['condition']})"
-                )
+                loop_type = instruction.get("loop_type")
 
-                loop_body_block = self.create_block()
-                loop_condition_block.add_successor(loop_body_block, label="true")
-                last_loop_body_block = self._build_recursive(
-                    instruction.get("body", []), loop_body_block
-                )
-                if last_loop_body_block:
-                    last_loop_body_block.add_successor(loop_condition_block)
+                if loop_type == 'for':
+                    init_code = instruction.get('initialization')
+                    if init_code:
+                        current_block.add_instruction(init_code + ';')
+                    
+                    condition_block = self.create_block()
+                    current_block.add_successor(condition_block)
+                    condition_block.add_instruction(f"if ({instruction.get('condition', 'true')})")
 
-                after_loop_block = self.create_block()
-                loop_condition_block.add_successor(after_loop_block, label="false")
-                current_block = after_loop_block
+                    after_loop_block = self.create_block()
+                    condition_block.add_successor(after_loop_block, label="false")
+
+                    increment_block = self.create_block()
+                    increment_code = instruction.get('increment')
+                    if increment_code:
+                        increment_block.add_instruction(increment_code + ';')
+                    increment_block.add_successor(condition_block) # Loops back to the condition.
+                    
+                    loop_body_block = self.create_block()
+                    condition_block.add_successor(loop_body_block, label="true")
+                    last_body_block = self._build_recursive(instruction.get("body", []), loop_body_block)
+                    
+                    if last_body_block:
+                        last_body_block.add_successor(increment_block)
+                    
+                    current_block = after_loop_block
+
+                else:  
+                    loop_condition_block = current_block
+                    loop_condition_block.add_instruction(f"while ({instruction['condition']})")
+
+                    after_loop_block = self.create_block()
+                    loop_condition_block.add_successor(after_loop_block, label="false")
+
+                    loop_body_block = self.create_block()
+                    loop_condition_block.add_successor(loop_body_block, label="true")
+                    last_loop_body_block = self._build_recursive(
+                        instruction.get("body", []), loop_body_block
+                    )
+                    if last_loop_body_block:
+                        last_loop_body_block.add_successor(loop_condition_block)
+                    
+                    current_block = after_loop_block
 
         return current_block
 
@@ -122,16 +151,16 @@ class ControlFlowGraph:
             return
         self._compute_gen_kill()
         self._compute_reaching_definitions()
-
+    
     def _find_all_definitions(self, instructions):
         for instr in instructions:
             if instr["type"] == "statement":
                 code = instr["code"]
                 match = re.match(
-                    r"\s*(?:[\w\s]+\s+)?\*?(\w+)\s*\[?.*?]?\s*=\s*.+;", code
+                    r"\s*(?:[\w\s]+\s+)?\*?(\w+)\s*\[?.*?]?\s*=\s*.+;|(\w+)\+\+|(\w+)--|\+\+(\w+)|--(\w+)", code
                 )
                 if match:
-                    var_name = match.group(1)
+                    var_name = next(group for group in match.groups() if group is not None)
                     def_id = f"D{self._def_counter}"
                     self.definitions[def_id] = (var_name, code)
                     if var_name not in self.var_to_defs:
@@ -139,24 +168,16 @@ class ControlFlowGraph:
                     self.var_to_defs[var_name].add(def_id)
                     self._def_counter += 1
             elif instr["type"] in ["if", "loop"]:
+                if instr.get('loop_type') == 'for':
+                    if 'initialization' in instr:
+                        self._find_all_definitions([{'type': 'statement', 'code': instr['initialization'] + ';'}])
+                    if 'increment' in instr:
+                        self._find_all_definitions([{'type': 'statement', 'code': instr['increment'] + ';'}])
+
                 if "body" in instr:
                     self._find_all_definitions(instr["body"])
                 if "else_body" in instr:
                     self._find_all_definitions(instr["else_body"])
-
-    # def _compute_gen_kill(self):
-    #     """Computes the gen and kill sets for every basic block."""
-    #     code_to_def_id = {code: did for did, (_, code) in self.definitions.items()}
-    #     for block in self.blocks.values():
-    #         block.gen.clear()
-    #         block.kill.clear()
-    #         for instr_code in block.instructions:
-    #             if instr_code in code_to_def_id:
-    #                 def_id = code_to_def_id[instr_code]
-    #                 var_name, _ = self.definitions[def_id]
-    #                 block.gen.add(def_id)
-    #                 other_defs = self.var_to_defs[var_name] - {def_id}
-    #                 block.kill.update(other_defs)
 
     def _compute_gen_kill(self):
         code_to_def_id = {code: did for did, (_, code) in self.definitions.items()}

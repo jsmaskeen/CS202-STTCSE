@@ -148,48 +148,48 @@
         "inputIsValid = 0;"
     ],
     "D38": [
+        "i",
+        "i = 0;"
+    ],
+    "D39": [
+        "i",
+        "i++;"
+    ],
+    "D40": [
         "playerInput",
         "playerInput[i] = tolower(playerInput[i]);"
     ],
-    "D39": [
+    "D41": [
         "inputIsValid",
         "inputIsValid = 1;"
     ],
-    "D40": [
+    "D42": [
         "gameIsActive",
         "gameIsActive = 0;"
     ],
-    "D41": [
+    "D43": [
         "hasItems",
         "int hasItems = 0;"
     ],
-    "D42": [
+    "D44": [
+        "i",
+        "i = 0;"
+    ],
+    "D45": [
+        "i",
+        "i++;"
+    ],
+    "D46": [
         "hasItems",
         "hasItems = 1;"
     ],
-    "D43": [
+    "D47": [
         "moved",
         "int moved = 0;"
     ],
-    "D44": [
-        "playerLocation",
-        "playerLocation = ROOM_HALLWAY;"
-    ],
-    "D45": [
-        "moved",
-        "moved = 1;"
-    ],
-    "D46": [
-        "playerLocation",
-        "playerLocation = ROOM_GATE;"
-    ],
-    "D47": [
-        "moved",
-        "moved = 1;"
-    ],
     "D48": [
         "playerLocation",
-        "playerLocation = ROOM_CELL;"
+        "playerLocation = ROOM_HALLWAY;"
     ],
     "D49": [
         "moved",
@@ -197,7 +197,7 @@
     ],
     "D50": [
         "playerLocation",
-        "playerLocation = ROOM_STUDY;"
+        "playerLocation = ROOM_GATE;"
     ],
     "D51": [
         "moved",
@@ -205,7 +205,7 @@
     ],
     "D52": [
         "playerLocation",
-        "playerLocation = ROOM_ARMORY;"
+        "playerLocation = ROOM_CELL;"
     ],
     "D53": [
         "moved",
@@ -213,7 +213,7 @@
     ],
     "D54": [
         "playerLocation",
-        "playerLocation = ROOM_HALLWAY;"
+        "playerLocation = ROOM_STUDY;"
     ],
     "D55": [
         "moved",
@@ -221,7 +221,7 @@
     ],
     "D56": [
         "playerLocation",
-        "playerLocation = ROOM_HALLWAY;"
+        "playerLocation = ROOM_ARMORY;"
     ],
     "D57": [
         "moved",
@@ -244,106 +244,122 @@
         "moved = 1;"
     ],
     "D62": [
+        "playerLocation",
+        "playerLocation = ROOM_HALLWAY;"
+    ],
+    "D63": [
+        "moved",
+        "moved = 1;"
+    ],
+    "D64": [
+        "playerLocation",
+        "playerLocation = ROOM_HALLWAY;"
+    ],
+    "D65": [
+        "moved",
+        "moved = 1;"
+    ],
+    "D66": [
         "itemTaken",
         "int itemTaken = 0;"
     ],
-    "D63": [
+    "D67": [
         "inventory",
         "inventory[ITEM_TORCH] = 1;"
     ],
-    "D64": [
+    "D68": [
         "roomItems",
         "roomItems[ROOM_CELL][ITEM_TORCH] = 0;"
     ],
-    "D65": [
+    "D69": [
         "itemTaken",
         "itemTaken = 1;"
     ],
-    "D66": [
+    "D70": [
         "inventory",
         "inventory[ITEM_SWORD] = 1;"
     ],
-    "D67": [
+    "D71": [
         "roomItems",
         "roomItems[ROOM_ARMORY][ITEM_SWORD] = 0;"
     ],
-    "D68": [
+    "D72": [
         "itemTaken",
         "itemTaken = 1;"
     ],
-    "D69": [
+    "D73": [
         "inventory",
         "inventory[ITEM_SHIELD] = 1;"
     ],
-    "D70": [
+    "D74": [
         "roomItems",
         "roomItems[ROOM_ARMORY][ITEM_SHIELD] = 0;"
     ],
-    "D71": [
+    "D75": [
         "itemTaken",
         "itemTaken = 1;"
     ],
-    "D72": [
+    "D76": [
         "inventory",
         "inventory[ITEM_POTION] = 1;"
     ],
-    "D73": [
+    "D77": [
         "roomItems",
         "roomItems[ROOM_STUDY][ITEM_POTION] = 0;"
     ],
-    "D74": [
+    "D78": [
         "itemTaken",
         "itemTaken = 1;"
     ],
-    "D75": [
+    "D79": [
         "inventory",
         "inventory[ITEM_KEY] = 1;"
     ],
-    "D76": [
+    "D80": [
         "roomItems",
         "roomItems[ROOM_CHAMBER][ITEM_KEY] = 0;"
     ],
-    "D77": [
+    "D81": [
         "itemTaken",
         "itemTaken = 1;"
     ],
-    "D78": [
+    "D82": [
         "puzzleSolved",
         "puzzleSolved = 1;"
     ],
-    "D79": [
+    "D83": [
         "roomItems",
         "roomItems[ROOM_CHAMBER][ITEM_KEY] = 1;"
     ],
-    "D80": [
+    "D84": [
         "playerHealth",
         "playerHealth = playerHealth + 50;"
     ],
-    "D81": [
+    "D85": [
         "playerHealth",
         "playerHealth = 100;"
     ],
-    "D82": [
+    "D86": [
         "inventory",
         "inventory[ITEM_POTION] = 0;"
     ],
-    "D83": [
+    "D87": [
         "exitUnlocked",
         "exitUnlocked = 1;"
     ],
-    "D84": [
+    "D88": [
         "gameIsActive",
         "gameIsActive = 0;"
     ],
-    "D85": [
+    "D89": [
         "hasPlayerWon",
         "hasPlayerWon = 0;"
     ],
-    "D86": [
+    "D90": [
         "gameIsActive",
         "gameIsActive = 0;"
     ],
-    "D87": [
+    "D91": [
         "hasPlayerWon",
         "hasPlayerWon = 1;"
     ]

@@ -93,9 +93,19 @@ def parse_code(lines, start_index=0):
             i = current_end_index + 1
 
         elif line.startswith(("for", "while")):
-            condition_match = re.search(r"\((.*)\)", line)
-            condition = condition_match.group(1) if condition_match else ""
-
+            if line.startswith("for"):
+                condition_match = re.search(r"\((.*);(.*);(.*)\)", line)
+                if condition_match:
+                    initialization = condition_match.group(1).strip()
+                    condition = condition_match.group(2).strip()
+                    increment = condition_match.group(3).strip()
+                else:
+                    initialization, condition, increment = "", "", ""
+            else: # while loop
+                condition_match = re.search(r"\((.*)\)", line)
+                condition = condition_match.group(1) if condition_match else ""
+                initialization, increment = None, None
+                
             # Check for block body vs. single-statement body
             if i + 1 < len(lines) and lines[i + 1].strip() == "{":
                 body_nodes, end_index = parse_code(lines, i + 2)
@@ -110,6 +120,12 @@ def parse_code(lines, start_index=0):
                 "body": body_nodes,
                 "loop_type": "for" if line.startswith("for") else "while",
             }
+
+            if initialization:
+                block['initialization'] = initialization
+            if increment:
+                block['increment'] = increment
+
             nodes.append(block)
 
         elif line == "}":

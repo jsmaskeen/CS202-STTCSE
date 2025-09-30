@@ -12,242 +12,298 @@
         "const double epsilon = 1e-14;"
     ],
     "D4": [
+        "i",
+        "size_t i = 0;"
+    ],
+    "D5": [
+        "i",
+        "++i;"
+    ],
+    "D6": [
         "current_real_part",
         "current_real_part = creal(in[i]);"
     ],
-    "D5": [
+    "D7": [
         "current_imag_part",
         "current_imag_part = cimag(in[i]);"
     ],
-    "D6": [
+    "D8": [
         "two_pi_val",
         "two_pi_val = 2.0 * M_PI;"
     ],
-    "D7": [
+    "D9": [
         "neg_two_pi_val",
         "neg_two_pi_val = -1.0 * two_pi_val;"
     ],
-    "D8": [
+    "D10": [
         "n_as_double_dft",
         "n_as_double_dft = (double)n;"
     ],
-    "D9": [
+    "D11": [
         "f",
         "f = neg_two_pi_val / n_as_double_dft;"
     ],
-    "D10": [
+    "D12": [
+        "i",
+        "size_t i = 0;"
+    ],
+    "D13": [
+        "i",
+        "++i;"
+    ],
+    "D14": [
         "sum",
         "double complex sum = 0.0 + 0.0 * I;"
     ],
-    "D11": [
+    "D15": [
+        "j",
+        "size_t j = 0;"
+    ],
+    "D16": [
+        "j",
+        "++j;"
+    ],
+    "D17": [
         "angle_i_component",
         "angle_i_component = (double)i;"
     ],
-    "D12": [
+    "D18": [
         "angle_j_component",
         "angle_j_component = (double)j;"
     ],
-    "D13": [
+    "D19": [
         "angle_product",
         "angle_product = f * angle_i_component;"
     ],
-    "D14": [
+    "D20": [
         "final_angle_x",
         "final_angle_x = angle_product * angle_j_component;"
     ],
-    "D15": [
+    "D21": [
         "cos_of_x",
         "cos_of_x = cos(final_angle_x);"
     ],
-    "D16": [
+    "D22": [
         "sin_of_x",
         "sin_of_x = sin(final_angle_x);"
     ],
-    "D17": [
+    "D23": [
         "exponential_term",
         "exponential_term = cos_of_x + sin_of_x * I;"
     ],
-    "D18": [
+    "D24": [
         "input_sample",
         "input_sample = in[j];"
     ],
-    "D19": [
+    "D25": [
         "term_to_add",
         "term_to_add = input_sample * exponential_term;"
     ],
-    "D20": [
+    "D26": [
         "sum",
         "sum += term_to_add;"
     ],
-    "D21": [
+    "D27": [
         "real_part_before_clean",
         "real_part_before_clean = creal(sum);"
     ],
-    "D22": [
+    "D28": [
         "imag_part_before_clean",
         "imag_part_before_clean = cimag(sum);"
     ],
-    "D23": [
+    "D29": [
         "rounded_real_part",
         "rounded_real_part = round(real_part_before_clean);"
     ],
-    "D24": [
+    "D30": [
         "rounded_imag_part",
         "rounded_imag_part = round(imag_part_before_clean);"
     ],
-    "D25": [
+    "D31": [
         "real_difference",
         "real_difference = fabs(real_part_before_clean - rounded_real_part);"
     ],
-    "D26": [
+    "D32": [
         "imag_difference",
         "imag_difference = fabs(imag_part_before_clean - rounded_imag_part);"
     ],
-    "D27": [
+    "D33": [
         "final_real_part",
         "double final_real_part = real_part_before_clean;"
     ],
-    "D28": [
+    "D34": [
         "final_imag_part",
         "double final_imag_part = imag_part_before_clean;"
     ],
-    "D29": [
+    "D35": [
         "final_real_part",
         "final_real_part = rounded_real_part;"
     ],
-    "D30": [
+    "D36": [
         "final_imag_part",
         "final_imag_part = rounded_imag_part;"
     ],
-    "D31": [
+    "D37": [
         "cleaned_value",
         "cleaned_value = final_real_part + final_imag_part * I;"
     ],
-    "D32": [
+    "D38": [
         "out",
         "out[i] = cleaned_value;"
     ],
-    "D33": [
+    "D39": [
+        "i",
+        "size_t i = 0;"
+    ],
+    "D40": [
+        "i",
+        "++i;"
+    ],
+    "D41": [
         "r_dft",
         "r_dft = creal(out[i]);"
     ],
-    "D34": [
+    "D42": [
         "im_dft",
         "im_dft = cimag(out[i]);"
     ],
-    "D35": [
+    "D43": [
         "pos_two_pi_val",
         "pos_two_pi_val = 2.0 * M_PI;"
     ],
-    "D36": [
+    "D44": [
         "n_as_double_idft",
         "n_as_double_idft = (double)n;"
     ],
-    "D37": [
+    "D45": [
         "f_inverse",
         "f_inverse = pos_two_pi_val / n_as_double_idft;"
     ],
-    "D38": [
-        "inv_sum",
-        "double complex inv_sum = 0.0 + 0.0 * I;"
-    ],
-    "D39": [
-        "inv_angle_i_comp",
-        "inv_angle_i_comp = (double)i;"
-    ],
-    "D40": [
-        "inv_angle_j_comp",
-        "inv_angle_j_comp = (double)j;"
-    ],
-    "D41": [
-        "inv_angle_prod",
-        "inv_angle_prod = f_inverse * inv_angle_i_comp;"
-    ],
-    "D42": [
-        "final_inv_angle_x",
-        "final_inv_angle_x = inv_angle_prod * inv_angle_j_comp;"
-    ],
-    "D43": [
-        "inv_cos_x",
-        "inv_cos_x = cos(final_inv_angle_x);"
-    ],
-    "D44": [
-        "inv_sin_x",
-        "inv_sin_x = sin(final_inv_angle_x);"
-    ],
-    "D45": [
-        "inv_exp_term",
-        "inv_exp_term = inv_cos_x + inv_sin_x * I;"
-    ],
     "D46": [
-        "dft_sample",
-        "dft_sample = out[j];"
+        "i",
+        "size_t i = 0;"
     ],
     "D47": [
-        "inv_term_to_add",
-        "inv_term_to_add = dft_sample * inv_exp_term;"
+        "i",
+        "++i;"
     ],
     "D48": [
         "inv_sum",
-        "inv_sum += inv_term_to_add;"
+        "double complex inv_sum = 0.0 + 0.0 * I;"
     ],
     "D49": [
+        "j",
+        "size_t j = 0;"
+    ],
+    "D50": [
+        "j",
+        "++j;"
+    ],
+    "D51": [
+        "inv_angle_i_comp",
+        "inv_angle_i_comp = (double)i;"
+    ],
+    "D52": [
+        "inv_angle_j_comp",
+        "inv_angle_j_comp = (double)j;"
+    ],
+    "D53": [
+        "inv_angle_prod",
+        "inv_angle_prod = f_inverse * inv_angle_i_comp;"
+    ],
+    "D54": [
+        "final_inv_angle_x",
+        "final_inv_angle_x = inv_angle_prod * inv_angle_j_comp;"
+    ],
+    "D55": [
+        "inv_cos_x",
+        "inv_cos_x = cos(final_inv_angle_x);"
+    ],
+    "D56": [
+        "inv_sin_x",
+        "inv_sin_x = sin(final_inv_angle_x);"
+    ],
+    "D57": [
+        "inv_exp_term",
+        "inv_exp_term = inv_cos_x + inv_sin_x * I;"
+    ],
+    "D58": [
+        "dft_sample",
+        "dft_sample = out[j];"
+    ],
+    "D59": [
+        "inv_term_to_add",
+        "inv_term_to_add = dft_sample * inv_exp_term;"
+    ],
+    "D60": [
+        "inv_sum",
+        "inv_sum += inv_term_to_add;"
+    ],
+    "D61": [
         "scaled_sum",
         "scaled_sum = inv_sum / n_as_double_idft;"
     ],
-    "D50": [
+    "D62": [
         "inv_real_before_clean",
         "inv_real_before_clean = creal(scaled_sum);"
     ],
-    "D51": [
+    "D63": [
         "inv_imag_before_clean",
         "inv_imag_before_clean = cimag(scaled_sum);"
     ],
-    "D52": [
+    "D64": [
         "inv_rounded_real",
         "inv_rounded_real = round(inv_real_before_clean);"
     ],
-    "D53": [
+    "D65": [
         "inv_rounded_imag",
         "inv_rounded_imag = round(inv_imag_before_clean);"
     ],
-    "D54": [
+    "D66": [
         "inv_real_diff",
         "inv_real_diff = fabs(inv_real_before_clean - inv_rounded_real);"
     ],
-    "D55": [
+    "D67": [
         "inv_imag_diff",
         "inv_imag_diff = fabs(inv_imag_before_clean - inv_rounded_imag);"
     ],
-    "D56": [
+    "D68": [
         "inv_final_real",
         "double inv_final_real = inv_real_before_clean;"
     ],
-    "D57": [
+    "D69": [
         "inv_final_imag",
         "double inv_final_imag = inv_imag_before_clean;"
     ],
-    "D58": [
+    "D70": [
         "inv_final_real",
         "inv_final_real = inv_rounded_real;"
     ],
-    "D59": [
+    "D71": [
         "inv_final_imag",
         "inv_final_imag = inv_rounded_imag;"
     ],
-    "D60": [
+    "D72": [
         "inv_cleaned_value",
         "inv_cleaned_value = inv_final_real + inv_final_imag * I;"
     ],
-    "D61": [
+    "D73": [
         "in",
         "in[i] = inv_cleaned_value;"
     ],
-    "D62": [
+    "D74": [
+        "i",
+        "size_t i = 0;"
+    ],
+    "D75": [
+        "i",
+        "++i;"
+    ],
+    "D76": [
         "r_idft",
         "r_idft = creal(in[i]);"
     ],
-    "D63": [
+    "D77": [
         "im_idft",
         "im_idft = cimag(in[i]);"
     ]

@@ -28,394 +28,618 @@
         "double rect = 0.0, trap = 0.0, simp = 0.0;"
     ],
     "D8": [
-        "x",
-        "double x = a + i * h;"
-    ],
-    "D9": [
-        "rect",
-        "rect += sin(x);"
-    ],
-    "D10": [
-        "rect",
-        "rect *= h;"
-    ],
-    "D11": [
-        "x1",
-        "double x1 = a + i * h;"
-    ],
-    "D12": [
-        "x2",
-        "double x2 = a + (i + 1) * h;"
-    ],
-    "D13": [
-        "trap",
-        "trap += 0.5 * (sin(x1) + sin(x2));"
-    ],
-    "D14": [
-        "trap",
-        "trap *= h;"
-    ],
-    "D15": [
-        "x0",
-        "double x0 = a + i * h;"
-    ],
-    "D16": [
-        "x1",
-        "double x1 = a + (i + 1) * h;"
-    ],
-    "D17": [
-        "x2",
-        "double x2 = a + (i + 2) * h;"
-    ],
-    "D18": [
-        "simp",
-        "simp += (sin(x0) + 4 * sin(x1) + sin(x2));"
-    ],
-    "D19": [
-        "simp",
-        "simp *= h / 3.0;"
-    ],
-    "D20": [
-        "monte",
-        "double monte = 0.0;"
-    ],
-    "D21": [
-        "r",
-        "double r = a + (b - a) * (rand() / (double)RAND_MAX);"
-    ],
-    "D22": [
-        "monte",
-        "monte += sin(r);"
-    ],
-    "D23": [
-        "monte",
-        "monte *= (b - a) / n;"
-    ],
-    "D24": [
-        "gauss",
-        "double gauss = 0.0;"
-    ],
-    "D25": [
-        "ng",
-        "int ng = 1000;"
-    ],
-    "D26": [
-        "t",
-        "double t = cos(M_PI * (i + 0.75) / (ng + 0.5));"
-    ],
-    "D27": [
-        "gauss",
-        "gauss += sin(0.5 * (b - a) * t + 0.5 * (b + a));"
-    ],
-    "D28": [
-        "gauss",
-        "gauss *= (b - a) / ng;"
-    ],
-    "D29": [
-        "rom",
-        "double rom[8][8] = {{0.0}};"
-    ],
-    "D30": [
-        "m",
-        "int m = 1 << i;"
-    ],
-    "D31": [
-        "step",
-        "double step = (b - a) / m;"
-    ],
-    "D32": [
-        "s",
-        "double s = 0.5 * (sin(a) + sin(b));"
-    ],
-    "D33": [
-        "s",
-        "s += sin(a + j * step);"
-    ],
-    "D34": [
-        "rom",
-        "rom[i][0] = s * step;"
-    ],
-    "D35": [
-        "rom",
-        "rom[i][j] = (pow(4, j) * rom[i][j - 1] - rom[i - 1][j - 1]) / (pow(4, j) - 1);"
-    ],
-    "D36": [
-        "integ",
-        "double integ = 0.0;"
-    ],
-    "D37": [
-        "slices",
-        "int slices = 5000;"
-    ],
-    "D38": [
-        "step",
-        "double step = (b - a) / slices;"
-    ],
-    "D39": [
-        "x",
-        "double x = a + i * step + step / 2.0;"
-    ],
-    "D40": [
-        "integ",
-        "integ += exp(-x * x);"
-    ],
-    "D41": [
-        "integ",
-        "integ *= step;"
-    ],
-    "D42": [
-        "double_sum",
-        "double double_sum = 0.0;"
-    ],
-    "D43": [
-        "m1",
-        "int m1 = 200, m2 = 200;"
-    ],
-    "D44": [
-        "xa",
-        "double xa = 0, xb = 1, ya = 0, yb = 1;"
-    ],
-    "D45": [
-        "hx",
-        "double hx = (xb - xa) / m1;"
-    ],
-    "D46": [
-        "hy",
-        "double hy = (yb - ya) / m2;"
-    ],
-    "D47": [
-        "x",
-        "double x = xa + (i + 0.5) * hx;"
-    ],
-    "D48": [
-        "y",
-        "double y = ya + (j + 0.5) * hy;"
-    ],
-    "D49": [
-        "double_sum",
-        "double_sum += sin(x * y);"
-    ],
-    "D50": [
-        "double_sum",
-        "double_sum *= hx * hy;"
-    ],
-    "D51": [
-        "volume",
-        "double volume = 0.0;"
-    ],
-    "D52": [
-        "samples",
-        "int samples = 200000;"
-    ],
-    "D53": [
-        "x",
-        "double x = (double)rand() / RAND_MAX;"
-    ],
-    "D54": [
-        "y",
-        "double y = (double)rand() / RAND_MAX;"
-    ],
-    "D55": [
-        "z",
-        "double z = (double)rand() / RAND_MAX;"
-    ],
-    "D56": [
-        "volume",
-        "volume=volume+1;"
-    ],
-    "D57": [
-        "volume",
-        "volume /= samples;"
-    ],
-    "D58": [
-        "volume",
-        "volume *= 8.0;"
-    ],
-    "D59": [
-        "pi_est",
-        "double pi_est = 0.0;"
-    ],
-    "D60": [
-        "hits",
-        "int hits = 0;"
-    ],
-    "D61": [
-        "x",
-        "double x = (double)rand() / RAND_MAX;"
-    ],
-    "D62": [
-        "y",
-        "double y = (double)rand() / RAND_MAX;"
-    ],
-    "D63": [
-        "hits",
-        "hits=hits+1;"
-    ],
-    "D64": [
-        "pi_est",
-        "pi_est = 4.0 * hits / 500000.0;"
-    ],
-    "D65": [
-        "taylor",
-        "double taylor = 0.0;"
-    ],
-    "D66": [
-        "xval",
-        "double xval = 1.0;"
-    ],
-    "D67": [
-        "term",
-        "double term = pow(xval, i) / tgamma(i + 1);"
-    ],
-    "D68": [
-        "term",
-        "term = -term;"
-    ],
-    "D69": [
-        "taylor",
-        "taylor += term;"
-    ],
-    "D70": [
-        "fourier",
-        "double fourier = 0.0;"
-    ],
-    "D71": [
-        "terms",
-        "int terms = 50;"
-    ],
-    "D72": [
-        "fourier",
-        "fourier += (sin(i * 1.0) / i);"
-    ],
-    "D73": [
-        "nested_sum",
-        "double nested_sum = 0.0;"
-    ],
-    "D74": [
-        "nested_sum",
-        "nested_sum += 1.0 / (i + j + k);"
-    ],
-    "D75": [
-        "adaptive",
-        "double adaptive = 0.0;"
-    ],
-    "D76": [
-        "intervals",
-        "int intervals = 2000;"
-    ],
-    "D77": [
-        "prev",
-        "double prev = 0.0;"
-    ],
-    "D78": [
-        "xi",
-        "double xi = a + (b - a) * i / intervals;"
-    ],
-    "D79": [
-        "yi",
-        "double yi = cos(xi);"
-    ],
-    "D80": [
-        "adaptive",
-        "adaptive += fabs(yi - prev);"
-    ],
-    "D81": [
-        "prev",
-        "prev = yi;"
-    ],
-    "D82": [
-        "adaptive",
-        "adaptive *= (b - a) / intervals;"
-    ],
-    "D83": [
-        "mat_sum",
-        "double mat_sum = 0.0;"
-    ],
-    "D84": [
-        "dim",
-        "int dim = 20;"
-    ],
-    "D85": [
-        "mat",
-        "mat[i][j] = sin((i + 1) * (j + 1));"
-    ],
-    "D86": [
-        "mat_sum",
-        "mat_sum += mat[i][j];"
-    ],
-    "D87": [
-        "count",
-        "int count = 0;"
-    ],
-    "D88": [
-        "seq",
-        "double seq = 0.0;"
-    ],
-    "D89": [
         "i",
         "i = 0;"
     ],
+    "D9": [
+        "i",
+        "i++;"
+    ],
+    "D10": [
+        "x",
+        "double x = a + i * h;"
+    ],
+    "D11": [
+        "rect",
+        "rect += sin(x);"
+    ],
+    "D12": [
+        "rect",
+        "rect *= h;"
+    ],
+    "D13": [
+        "i",
+        "i = 0;"
+    ],
+    "D14": [
+        "i",
+        "i++;"
+    ],
+    "D15": [
+        "x1",
+        "double x1 = a + i * h;"
+    ],
+    "D16": [
+        "x2",
+        "double x2 = a + (i + 1) * h;"
+    ],
+    "D17": [
+        "trap",
+        "trap += 0.5 * (sin(x1) + sin(x2));"
+    ],
+    "D18": [
+        "trap",
+        "trap *= h;"
+    ],
+    "D19": [
+        "i",
+        "i = 0;"
+    ],
+    "D20": [
+        "i",
+        "i += 2;"
+    ],
+    "D21": [
+        "x0",
+        "double x0 = a + i * h;"
+    ],
+    "D22": [
+        "x1",
+        "double x1 = a + (i + 1) * h;"
+    ],
+    "D23": [
+        "x2",
+        "double x2 = a + (i + 2) * h;"
+    ],
+    "D24": [
+        "simp",
+        "simp += (sin(x0) + 4 * sin(x1) + sin(x2));"
+    ],
+    "D25": [
+        "simp",
+        "simp *= h / 3.0;"
+    ],
+    "D26": [
+        "monte",
+        "double monte = 0.0;"
+    ],
+    "D27": [
+        "i",
+        "i = 0;"
+    ],
+    "D28": [
+        "i",
+        "i++;"
+    ],
+    "D29": [
+        "r",
+        "double r = a + (b - a) * (rand() / (double)RAND_MAX);"
+    ],
+    "D30": [
+        "monte",
+        "monte += sin(r);"
+    ],
+    "D31": [
+        "monte",
+        "monte *= (b - a) / n;"
+    ],
+    "D32": [
+        "gauss",
+        "double gauss = 0.0;"
+    ],
+    "D33": [
+        "ng",
+        "int ng = 1000;"
+    ],
+    "D34": [
+        "i",
+        "i = 0;"
+    ],
+    "D35": [
+        "i",
+        "i++;"
+    ],
+    "D36": [
+        "t",
+        "double t = cos(M_PI * (i + 0.75) / (ng + 0.5));"
+    ],
+    "D37": [
+        "gauss",
+        "gauss += sin(0.5 * (b - a) * t + 0.5 * (b + a));"
+    ],
+    "D38": [
+        "gauss",
+        "gauss *= (b - a) / ng;"
+    ],
+    "D39": [
+        "rom",
+        "double rom[8][8] = {{0.0}};"
+    ],
+    "D40": [
+        "i",
+        "i = 0;"
+    ],
+    "D41": [
+        "i",
+        "i++;"
+    ],
+    "D42": [
+        "m",
+        "int m = 1 << i;"
+    ],
+    "D43": [
+        "step",
+        "double step = (b - a) / m;"
+    ],
+    "D44": [
+        "s",
+        "double s = 0.5 * (sin(a) + sin(b));"
+    ],
+    "D45": [
+        "j",
+        "j = 1;"
+    ],
+    "D46": [
+        "j",
+        "j++;"
+    ],
+    "D47": [
+        "s",
+        "s += sin(a + j * step);"
+    ],
+    "D48": [
+        "rom",
+        "rom[i][0] = s * step;"
+    ],
+    "D49": [
+        "i",
+        "i = 1;"
+    ],
+    "D50": [
+        "i",
+        "i++;"
+    ],
+    "D51": [
+        "j",
+        "j = 1;"
+    ],
+    "D52": [
+        "j",
+        "j++;"
+    ],
+    "D53": [
+        "rom",
+        "rom[i][j] = (pow(4, j) * rom[i][j - 1] - rom[i - 1][j - 1]) / (pow(4, j) - 1);"
+    ],
+    "D54": [
+        "integ",
+        "double integ = 0.0;"
+    ],
+    "D55": [
+        "slices",
+        "int slices = 5000;"
+    ],
+    "D56": [
+        "step",
+        "double step = (b - a) / slices;"
+    ],
+    "D57": [
+        "i",
+        "i = 0;"
+    ],
+    "D58": [
+        "i",
+        "i++;"
+    ],
+    "D59": [
+        "x",
+        "double x = a + i * step + step / 2.0;"
+    ],
+    "D60": [
+        "integ",
+        "integ += exp(-x * x);"
+    ],
+    "D61": [
+        "integ",
+        "integ *= step;"
+    ],
+    "D62": [
+        "double_sum",
+        "double double_sum = 0.0;"
+    ],
+    "D63": [
+        "m1",
+        "int m1 = 200, m2 = 200;"
+    ],
+    "D64": [
+        "xa",
+        "double xa = 0, xb = 1, ya = 0, yb = 1;"
+    ],
+    "D65": [
+        "hx",
+        "double hx = (xb - xa) / m1;"
+    ],
+    "D66": [
+        "hy",
+        "double hy = (yb - ya) / m2;"
+    ],
+    "D67": [
+        "i",
+        "i = 0;"
+    ],
+    "D68": [
+        "i",
+        "i++;"
+    ],
+    "D69": [
+        "j",
+        "j = 0;"
+    ],
+    "D70": [
+        "j",
+        "j++;"
+    ],
+    "D71": [
+        "x",
+        "double x = xa + (i + 0.5) * hx;"
+    ],
+    "D72": [
+        "y",
+        "double y = ya + (j + 0.5) * hy;"
+    ],
+    "D73": [
+        "double_sum",
+        "double_sum += sin(x * y);"
+    ],
+    "D74": [
+        "double_sum",
+        "double_sum *= hx * hy;"
+    ],
+    "D75": [
+        "volume",
+        "double volume = 0.0;"
+    ],
+    "D76": [
+        "samples",
+        "int samples = 200000;"
+    ],
+    "D77": [
+        "i",
+        "i = 0;"
+    ],
+    "D78": [
+        "i",
+        "i++;"
+    ],
+    "D79": [
+        "x",
+        "double x = (double)rand() / RAND_MAX;"
+    ],
+    "D80": [
+        "y",
+        "double y = (double)rand() / RAND_MAX;"
+    ],
+    "D81": [
+        "z",
+        "double z = (double)rand() / RAND_MAX;"
+    ],
+    "D82": [
+        "volume",
+        "volume=volume+1;"
+    ],
+    "D83": [
+        "volume",
+        "volume /= samples;"
+    ],
+    "D84": [
+        "volume",
+        "volume *= 8.0;"
+    ],
+    "D85": [
+        "pi_est",
+        "double pi_est = 0.0;"
+    ],
+    "D86": [
+        "hits",
+        "int hits = 0;"
+    ],
+    "D87": [
+        "i",
+        "i = 0;"
+    ],
+    "D88": [
+        "i",
+        "i++;"
+    ],
+    "D89": [
+        "x",
+        "double x = (double)rand() / RAND_MAX;"
+    ],
     "D90": [
+        "y",
+        "double y = (double)rand() / RAND_MAX;"
+    ],
+    "D91": [
+        "hits",
+        "hits=hits+1;"
+    ],
+    "D92": [
+        "pi_est",
+        "pi_est = 4.0 * hits / 500000.0;"
+    ],
+    "D93": [
+        "taylor",
+        "double taylor = 0.0;"
+    ],
+    "D94": [
+        "xval",
+        "double xval = 1.0;"
+    ],
+    "D95": [
+        "i",
+        "i = 0;"
+    ],
+    "D96": [
+        "i",
+        "i++;"
+    ],
+    "D97": [
+        "term",
+        "double term = pow(xval, i) / tgamma(i + 1);"
+    ],
+    "D98": [
+        "term",
+        "term = -term;"
+    ],
+    "D99": [
+        "taylor",
+        "taylor += term;"
+    ],
+    "D100": [
+        "fourier",
+        "double fourier = 0.0;"
+    ],
+    "D101": [
+        "terms",
+        "int terms = 50;"
+    ],
+    "D102": [
+        "i",
+        "i = 1;"
+    ],
+    "D103": [
+        "i",
+        "i++;"
+    ],
+    "D104": [
+        "fourier",
+        "fourier += (sin(i * 1.0) / i);"
+    ],
+    "D105": [
+        "nested_sum",
+        "double nested_sum = 0.0;"
+    ],
+    "D106": [
+        "i",
+        "i = 1;"
+    ],
+    "D107": [
+        "i",
+        "i++;"
+    ],
+    "D108": [
+        "j",
+        "j = 1;"
+    ],
+    "D109": [
+        "j",
+        "j++;"
+    ],
+    "D110": [
+        "k",
+        "k = 1;"
+    ],
+    "D111": [
+        "k",
+        "k++;"
+    ],
+    "D112": [
+        "nested_sum",
+        "nested_sum += 1.0 / (i + j + k);"
+    ],
+    "D113": [
+        "adaptive",
+        "double adaptive = 0.0;"
+    ],
+    "D114": [
+        "intervals",
+        "int intervals = 2000;"
+    ],
+    "D115": [
+        "prev",
+        "double prev = 0.0;"
+    ],
+    "D116": [
+        "i",
+        "i = 1;"
+    ],
+    "D117": [
+        "i",
+        "i++;"
+    ],
+    "D118": [
+        "xi",
+        "double xi = a + (b - a) * i / intervals;"
+    ],
+    "D119": [
+        "yi",
+        "double yi = cos(xi);"
+    ],
+    "D120": [
+        "adaptive",
+        "adaptive += fabs(yi - prev);"
+    ],
+    "D121": [
+        "prev",
+        "prev = yi;"
+    ],
+    "D122": [
+        "adaptive",
+        "adaptive *= (b - a) / intervals;"
+    ],
+    "D123": [
+        "mat_sum",
+        "double mat_sum = 0.0;"
+    ],
+    "D124": [
+        "dim",
+        "int dim = 20;"
+    ],
+    "D125": [
+        "i",
+        "i = 0;"
+    ],
+    "D126": [
+        "i",
+        "i++;"
+    ],
+    "D127": [
+        "j",
+        "j = 0;"
+    ],
+    "D128": [
+        "j",
+        "j++;"
+    ],
+    "D129": [
+        "mat",
+        "mat[i][j] = sin((i + 1) * (j + 1));"
+    ],
+    "D130": [
+        "i",
+        "i = 0;"
+    ],
+    "D131": [
+        "i",
+        "i++;"
+    ],
+    "D132": [
+        "j",
+        "j = 0;"
+    ],
+    "D133": [
+        "j",
+        "j++;"
+    ],
+    "D134": [
+        "mat_sum",
+        "mat_sum += mat[i][j];"
+    ],
+    "D135": [
+        "count",
+        "int count = 0;"
+    ],
+    "D136": [
+        "seq",
+        "double seq = 0.0;"
+    ],
+    "D137": [
+        "i",
+        "i = 0;"
+    ],
+    "D138": [
         "t",
         "double t = (i + 0.5) / 1000.0;"
     ],
-    "D91": [
+    "D139": [
         "seq",
         "seq += 1.0 / (1 + t * t);"
     ],
-    "D92": [
+    "D140": [
         "i",
         "i=i+1;"
     ],
-    "D93": [
+    "D141": [
         "count",
         "count=count+1;"
     ],
-    "D94": [
+    "D142": [
         "seq",
         "seq /= 1000.0;"
     ],
-    "D95": [
+    "D143": [
         "seq",
         "seq *= 1.0;"
     ],
-    "D96": [
+    "D144": [
         "weird",
         "double weird = 0.0;"
     ],
-    "D97": [
+    "D145": [
+        "i",
+        "i = 1;"
+    ],
+    "D146": [
+        "i",
+        "i++;"
+    ],
+    "D147": [
+        "j",
+        "j = 1;"
+    ],
+    "D148": [
+        "j",
+        "j++;"
+    ],
+    "D149": [
         "weird",
         "weird += sin(i * j * 0.001);"
     ],
-    "D98": [
+    "D150": [
         "weird",
         "weird += cos(i * j * 0.001);"
     ],
-    "D99": [
+    "D151": [
         "series",
         "double series = 0.0;"
     ],
-    "D100": [
+    "D152": [
+        "i",
+        "i = 1;"
+    ],
+    "D153": [
+        "i",
+        "i++;"
+    ],
+    "D154": [
         "term",
         "double term = pow(-1, i + 1) / (double)i;"
     ],
-    "D101": [
+    "D155": [
         "series",
         "series += term;"
     ],
-    "D102": [
+    "D156": [
         "bess",
         "double bess = 0.0;"
     ],
-    "D103": [
+    "D157": [
         "x0",
         "double x0 = 1.0;"
     ],
-    "D104": [
+    "D158": [
+        "i",
+        "i = 0;"
+    ],
+    "D159": [
+        "i",
+        "i++;"
+    ],
+    "D160": [
         "term",
         "double term = pow(-1, i) * pow(x0 / 2.0, 2 * i) / (tgamma(i + 1) * tgamma(i + 1));"
     ],
-    "D105": [
+    "D161": [
         "bess",
         "bess += term;"
     ]
