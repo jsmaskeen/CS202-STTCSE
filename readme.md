@@ -9,7 +9,11 @@
 
 - [google/guice @ c6839995f](https://github.com/google/guice)
  
-## Analysis file: [main.ipynb](./main.ipynb)
+## Analysis file: [`main.ipynb`](./main.ipynb)
+
+## Project x Tool analysis file: [`project_Tool_CWE_analysis.csv`](./project_Tool_CWE_analysis.csv)
+## Overall Tool Coverage: [`tool_coverage.csv`](./tool_coverage.csv)
+
 
 ## Tools chosen:
 
