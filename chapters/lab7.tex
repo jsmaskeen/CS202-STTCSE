@@ -193,7 +193,7 @@ Using the following way, the above rudimentary AST is converted into a CFG:
                     to that body with label "true".
               \item It also creates an after-if block (the join). The last block of the if-body is
                     connected to the after-if block.
-              \item If there is an else_body, an else block is created and connected with label
+              \item If there is an else statement, an else block is created and connected with label
                     "false", and its last block also goes to the join. If no else is present, the
                     builder creates a "false" edge from the if-block to the join directly.
               \item Execution continues at the after-if block.
