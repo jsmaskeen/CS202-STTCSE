@@ -19,9 +19,6 @@ For demonstration, we have also chosen a simple file: [`programs/simple.c`](./pr
 Stored in [`results/`](./results/)
 
 
-
-
-
 Defintions files:
 - [`results/dft_DFA_definitions.json`](results/dft_DFA_definitions.json)
 - [`results/integration_DFA_definitions.json`](results/integration_DFA_definitions.json)
@@ -58,7 +55,7 @@ DFA Analysis results:
 - [`results/labyrinth_game_DFA_reaching_definitions_iterations.csv`](./results/labyrinth_game_DFA_reaching_definitions_iterations.csv)
 - [`results/simple_DFA_reaching_definitions_iterations.csv`](./results/simple_DFA_reaching_definitions_iterations.csv)
 
-Reaching defintion analysis results:
+Multiple reaching defintion analysis results:
 - [`results/dft_DFA_definitions_multiple_reaching_definitions.json`](./results/dft_DFA_definitions_multiple_reaching_definitions.json)
 - [`results/integration_DFA_definitions_multiple_reaching_definitions.json`](./results/integration_DFA_definitions_multiple_reaching_definitions.json)
 - [`results/labyrinth_game_DFA_definitions_multiple_reaching_definitions.json`](./results/labyrinth_game_DFA_definitions_multiple_reaching_definitions.json)
