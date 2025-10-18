@@ -77,7 +77,7 @@ available in the GitHub repository for this lab.
 
 The setup for semgrep involved installing It via pip and setting an API token
 (from the website) as an environment variable followed by logging in via the
-command line (Fig.~\ref{1_3}). For snyk, we installed it via npm, and then set up
+command line (Fig.~\ref{1_3}). For snyk, we installed it via \texttt{npm}, and then set up
 authentication using CLI (Fig.~\ref{1_5}). CodeQL was set up by downloading the
 CLI from the official website and configuring it in the PATH.
 \begin{figure}[!ht]
@@ -95,7 +95,7 @@ CLI from the official website and configuring it in the PATH.
 \end{figure}
 
 We then had to build some of the repositories, for example, dagger and guice,
-using \texttt{./gradle build} command (Fig.~\ref{1_8}).
+using \texttt{./gradlew build} command (Fig.~\ref{1_8}).
 
 \begin{figure}[!ht]
     \centering
@@ -135,7 +135,7 @@ repositories (example here, dagger), the commands used were as follows:
 \end{figure}
 
 Note that CodeQL run for dagger had a very long output, so the STDOUT was
-stored as a file, available on the github repository.
+stored as a file, available on the GitHub repository.
 
 We also write a ipynb notebook to parse the SARIF files and extract the CWE IDs
 reported by each tool for each repository. The findings were aggregated for
@@ -299,7 +299,7 @@ In the case of the sentinel project, all three tools show very low agreement
 with each other, with the highest IoU being only 0.2 between Semgrep and Snyk.
 This indicates that the tools are largely complementary for this project, each
 finding a distinct set of vulnerabilities. The venn diagram below illustrates
-the limited overlap (Fig.~\ref{1_12})..
+the limited overlap (Fig.~\ref{1_12}).
 
 \begin{figure}[!ht]
     \centering
@@ -327,7 +327,7 @@ The IoU values for the sentinel project are as follows:
 
 Similar to the sentinel project, the tools show low agreement for the guice
 project. The IoU between Semgrep and Snyk is 0.2, and there is no overlap
-between CodeQL and the other two tools. The venn diagram below visualizes this (Fig.~\ref{1_13})..
+between CodeQL and the other two tools. The venn diagram below visualizes this (Fig.~\ref{1_13}).
 
 \begin{figure}[!ht]
     \centering
@@ -336,17 +336,44 @@ between CodeQL and the other two tools. The venn diagram below visualizes this (
     \label{1_13}
 \end{figure}
 
+\subsubsection{Overall IoU metrics}
+We consolidate the unique CWE IDs across all three projects, and the IoU values are as follows:
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{lccc}
+        \hline
+                & CodeQL & Semgrep & Snyk \\
+        \hline
+        CodeQL  & 1.0    & 0.0     & 0.04 \\
+        Semgrep & 0.0    & 1.0     & 0.31  \\
+        Snyk    & 0.04    & 0.31      & 1.0  \\
+        \hline
+    \end{tabular}
+    \caption{IoU over all unique CWEs detected by the three tools.}
+\end{table}
+
+This shows that CodeQL and Semgrep or CodeQL and Snyk have very diverse detection capabilities. However, 31\% of vulnerabilities detected by Snyk and Semgrep are the same. So there is partial redundancy for Snyk and Semgrep. The venn diagram below visualizes this (Fig.~\ref{1_14}).
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/1_14.png}
+    \caption{Venn diagram for overall coverage.}
+    \label{1_14}
+\end{figure}
+
 \section{Discussion and Conclusion}
 
 This lab provided us with details about the performance of different SAST
-tools. Our analysis of the CWE Top 25 coverage revealed that Snyk had the
+tools. Our analysis of the CWE Top 25 coverage showed that Snyk had the
 broadest coverage among the three tools. However, the IoU analysis showed that
 no single tool is sufficient for in depth vulnerability detection. The low IoU
 values across most tool pairs and projects highlight the diversity in their
 detection capabilities.
+CodeQL finds highly unique vulnerabilities, whereas there is some redundancy between Semgrep and Snyk.
 
 To maximize CWE coverage, a combination of tools is necessary. Based on our
-findings, using CodeQL and Snyk together would provide the best coverage for
+findings, using CodeQL and Snyk (Semgrep also works but it detects lower number of vulnerabilities than Snyk) together would provide the best coverage for
 the analyzed projects, as they tend to find different sets of vulnerabilities.
 The high IoU between Semgrep and Snyk in some cases suggests that using both
 might lead to redundant findings.

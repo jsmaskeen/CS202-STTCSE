@@ -9,7 +9,7 @@
 
 \section{Introduction}
 In this lab we implement a Reaching Definitions Analyzer for C programs from
-scratch. We create our own custom simple parser, conver the C code into a
+scratch. We create our own custom simple parser, convert the C code into a
 parsed tree, then make a control flow graph from it by identifying basic blocks
 and their connections. Finally, we implement the reaching definitions analysis
 using the iterative algorithm discussed in class. Reaching Definitions Analysis
@@ -17,7 +17,7 @@ is a fundamental data-flow analysis technique used in compilers to determine
 which definitions (assignments of values to variables) may reach a given point
 in the program. This is useful for optimizations such as dead code elimination
 and, constant propagation etc. We use an example of simple C program to
-illustrate the steps and output of our analysis. We run the analysis on three
+illustrate the steps and output of our analysis in this document. We run the analysis on three
 non-trivial C programs (200-300 LOC) and store their results on the Github
 repository for this lab.
 
@@ -46,7 +46,7 @@ We use four C programs for our analysis. They are as follows:
     \item \texttt{dft.c} (291 LOC): A program that implements the Discrete Fourier Transform. This program was chosen for its use of loops and arrays.
     \item \texttt{integration.c} (250 LOC): A program that performs numerical integration along with other computations such as computing $\pi$. This program was selected for its mathematical computations, calling external procedures (considered as blackbox) and more complex control flow.
     \item \texttt{labyrinth\_game.c} (460 LOC): A simple game that navigates a labyrinth. This program was chosen for its interactive nature and its use of nested loops and conditionals.
-    \item \texttt{simple.c}: A basic program with conditional statements and variable reassignments. This program is used to provide a clear, step-by-step walkthrough of the analysis process.
+    \item \texttt{simple.c}: A basic program with conditional statements and variable reassignments. This program is used to provide a clear, step-by-step walkthrough of the analysis process in this document.
 \end{enumerate}
 All programs are standalone \texttt{.c} files with a \texttt{main()} function, and the analysis is intraprocedural.
 
@@ -200,7 +200,7 @@ Using the following way, the above rudimentary AST is converted into a CFG:
           \end{itemize}
 
     \item Loop statements:
-          \begin{itemize*}
+          \begin{itemize}
               \item For loop:
                     \begin{itemize}
                         \item If an initialization exists, it is used as an instruction in the current block
@@ -219,7 +219,7 @@ Using the following way, the above rudimentary AST is converted into a CFG:
                               the condition block.
                         \item The "false" edge goes to the after-loop block.
                     \end{itemize}
-          \end{itemize*}
+          \end{itemize}
 \end{enumerate}
 
 The exporting of the CFG is handled separately, where each node label contains
@@ -258,6 +258,19 @@ of 4.
 Reaching Definitions Analysis determins, for each point in the program, which
 definitions (assignments of values to variables) can reach that point. The
 program points are the entry or exit of each basic block in the CFG.
+
+A definition is any assignment statement, and we use the following regex to find all such assignment statemets. Fig~\ref{2_10} shows which sort of assignment statements can be matched by our regular expression.
+
+\begin{lstlisting}[language=Python]
+    re.match(r"\s*(?:[\w\s]+\s+)?\*?(\w+)\s*\[?.*?]?\s*=\s*.+;|(\w+)\+\+|(\w+)--|\+\+(\w+)|--(\w+)")
+\end{lstlisting}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/2_10.png}
+    \caption{Example of the assignment statements our regex can match.}
+    \label{2_10}
+\end{figure}
 
 The dataflow equations for Reaching Definitions Analysis are as follows:
 
@@ -341,7 +354,7 @@ Table~\ref{table:cc_metrics}.
     \centering
     \begin{tabular}{lccc}
         \hline
-        \textbf{Program}           & \textbf{E} & \textbf{N} & \textbf{CC} \\
+        \textbf{Program}           & No. Of Edges (\textbf{E}) & No. Of Nodes (\textbf{N}) & Cyclomatic Complexity (\textbf{CC}) \\
         \hline
         \texttt{dft.c}             & 92         & 73         & 21          \\
         \texttt{integration.c}     & 179        & 147        & 34          \\
