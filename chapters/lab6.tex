@@ -18,10 +18,11 @@ agreement and disagreement between the tools, helping us understand their
 similarity and diversity in vulnerability detection.
 
 \section{Setup and Tools}
-We have Git, Python, and VSCode installed. \texttt{git {-}{-}version} gives
+We have Git, Python, and VSCode installed. \texttt{python {-}{-}version} gives
+\texttt{Python 3.12.4} as the output. \texttt{git {-}{-}version} gives
 \texttt{git version 2.45.2.windows.1} as the output. The operating system on which all commands and analysis are performed is Windows 11. SEART Search Engine
 \url{https://seart-ghs.si.usi.ch/} is used to search and filter the repository
-based on our criteria.
+based on our criteria. We use CodeQL, Semgrep and Snyk to analyze the chosen repositories.
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.5\linewidth]{figures/1_1.png}
@@ -247,6 +248,8 @@ Intersection over Union (IoU), also known as the Jaccard Index, for each pair
 of tools on a per-project basis. The IoU value ranges from 0 to 1, where 1
 indicates perfect agreement (the tools find the exact same set of CWEs) and 0
 indicates no agreement (the tools find completely different sets of CWEs).
+For two sets $x$, $y$, the IoU is given as:
+\[\text{IoU(x,y)} = \frac{x \cap y}{x \cup y}\]
 
 \subsubsection{Dagger project}
 The IoU values for the dagger project are as follows:
