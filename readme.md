@@ -19,4 +19,8 @@ Report: [23110146_A2.pdf](./23110146_A2.pdf)
 - [Lab6](https://github.com/jsmaskeen/CS202-STTCSE/tree/lab6)
 - [Lab7](https://github.com/jsmaskeen/CS202-STTCSE/tree/lab7)
 
+### Assessment 3 [Aarsh and Jaskirat (Equal Contribution)]
+Report: [23110146_A3.pdf](./23110146_A3.pdf)
+
+- [Lab9 and Lab10](https://github.com/jsmaskeen/CS202-STTCSE/tree/lab9_10)
 
